@@ -1,0 +1,218 @@
+# City: Washington, DC  
+# Scope: Homelessness context and resources  
+# Timeframe: Data primarily from 2020–2024
+
+## Summary (High-level)
+- In 2024, DC counted 5,616 people experiencing homelessness: 3,960 unaccompanied individuals and 1,656 people in 539 family households.  
+- 84% were in shelter or transitional housing, but unsheltered numbers and inflow, especially families, have risen since 2023.  
+- Unaccompanied adults have high rates of disabling conditions and chronic homelessness; families are more connected to income but still face major housing barriers.
+
+---
+
+## Overall statistics and trends
+
+### Population level and trends
+
+- FACT: Overall homeless population  
+  - City: Washington, DC  
+  - Topic: population_trend  
+  - Content: In 2024, DC counted 5,616 people: 3,960 unaccompanied individuals and 1,656 people in 539 families. This is up 14.1% (694 people) from 2023 but 12% below 2020.
+
+- FACT: Family vs unaccompanied trends  
+  - City: Washington, DC  
+  - Topic: population_trend_household_type  
+  - Content: From 2023–2024, unaccompanied individuals increased 5.6%, while people in families increased 41.3%. Since 2020, unaccompanied counts are nearly flat, but people in families are down 31.9%.
+
+- FACT: Unsheltered vs sheltered  
+  - City: Washington, DC  
+  - Topic: unsheltered_vs_sheltered  
+  - Content: In 2024, 84% of people were in shelter or transitional housing. 900 people were unsheltered, mostly unaccompanied adults, with only 5 unsheltered family households and 1 unaccompanied minor.
+
+- FACT: System inflow and churn  
+  - City: Washington, DC  
+  - Topic: system_inflow  
+  - Content: In FY23, about 40% of unaccompanied individuals served (≈3,460 people) and 35% of families were new or had returned after two+ years in housing. New inflow keeps counts from falling.
+
+- FACT: Geographic clusters of unsheltered homelessness  
+  - City: Washington, DC  
+  - Topic: unsheltered_geography  
+  - Content: Unsheltered people are concentrated in central areas such as Downtown, Union Station, Georgetown, Foggy Bottom, and the Golden Triangle, where survey teams found large clusters.
+
+### Demographic patterns
+
+- FACT: Race and ethnicity  
+  - Topic: demographics_race  
+  - Content: In 2024, 93% of people counted identified with a race/ethnicity other than White alone, versus 62% in the general DC population. 8% of people in families and 12% of unaccompanied individuals identified as Hispanic/Latinx.
+
+- FACT: Age groups  
+  - Topic: demographics_age  
+  - Content: The median age was 45 for unaccompanied individuals (46 men, 45 women) and 30 for heads of family households. Unaccompanied adults have skewed younger since 2022, while adults in families have become slightly older.
+
+- FACT: Gender patterns  
+  - Topic: demographics_gender  
+  - Content: Women are 86% of adults in families, while men are 70% of unaccompanied adults. About 2% of unaccompanied adults (92 people) identify with a gender other than solely man or woman, compared to 6 adults in families.
+
+---
+
+## Contributing factors and life experiences
+
+### Contextual factors
+
+- FACT: Pandemic-era supports and readjustment  
+  - Topic: contributing_factors_policy_context  
+  - Content: Recent increases may reflect a rebound after extra public health emergency resources ended. As those supports expired, more people and families re‑entered homelessness or came into the system.
+
+- FACT: System strain from new and returning households  
+  - Topic: contributing_factors_inflow  
+  - Content: High inflow of people new to the CoC or returning after prior exits to housing undermines progress. Even as many are housed each year, new and returning households keep overall numbers elevated.
+
+- FACT: Trump's crackdown on visible homelessness in DC
+  - Topic: conditions_policy_context
+  - Content: August 2025, President Trump placed the district's police under federal control and ordered National Guard soldiers to patrol its streets to arrest the homeless. The president also ordered homeless people to leave immediately. They become less visible and get disconnected from support services.
+
+### Common life experiences
+
+- FACT: Domestic and intimate partner violence  
+  - Topic: life_experiences_violence  
+  - Content: Surviving domestic or intimate partner violence is the most common life experience among adults in families. About a quarter of unaccompanied adults report it, rising to nearly half of unaccompanied women.
+
+- FACT: Other life experiences  
+  - Topic: life_experiences_other  
+  - Content: Among unaccompanied adults, notable shares report limited English, foster care history, and institutional stays. Institutional residence is especially common among them, much more than among adults in families.
+
+- FACT: Homelessness is common
+  - Topic: life_experiences_common
+  - Content: Nearly 1 in 3 people in DC personally know someone who has experienced homelessness or who is at risk of becoming homeless
+
+---
+
+## Subpopulations and conditions
+
+### Demographics
+- FACT: African Americans
+  - Topic: subpopulation_african_americans
+  - Content: Although African Americans make up 47 percent of DC’s overall population, they represent 87 percent of people experiencing homelessness in DC
+
+- FACT: Women - domestic violence
+  - Topic: subpopulation_women
+  - Content: Half of women experiencing homelessness in DC are homeless due to domestic violence.
+
+- FACT: Seniors
+  - Topic: subpopulation_seniors
+  - Content: One-quarter of people experiencing homelessness are over 55 years old.
+
+- FACT: People of color
+  - Topic: subpopulation_people_of_color
+  - Content: 93% of homeless adults are people of color versus 62% of DC residents on the whole.
+
+- FACT: DC-born
+  - Topic: subpopulation_dc_born
+  - Content: More than a third of the city’s longtime residents are being pushed out because it’s too expensive to live here.
+
+- FACT: Veterans  
+  - Topic: subpopulation_veterans  
+  - Content: The veteran count fell by 5 people in 2024 and by 96 (–45%) since 2020. In FY23, 335 veterans were housed, a 33% increase over FY22, and most veterans served were single adults rather than in families.
+
+### Disabling conditions and chronic homelessness
+
+- FACT: Disabling conditions – unaccompanied adults  
+  - Topic: conditions_unaccompanied  
+  - Content: Unaccompanied adults show high rates of mental illness, substance use history, chronic health issues, disabilities, and HIV. About 43% meet criteria for chronic homelessness, far higher than adults in families.
+
+- FACT: Disabling conditions – adults in families  
+  - Topic: conditions_families  
+  - Content: Adults in families have much lower rates of disabling conditions and chronic homelessness than unaccompanied adults. Faster exits from shelter to housing among families also help keep chronic homelessness low in this group.
+
+---
+
+## Shelter, transitional housing, and unsheltered settings
+
+### Unaccompanied individuals
+
+- FACT: Shelter and transitional housing – unaccompanied  
+  - Topic: services_shelter_individuals  
+  - Content: From 2023–2024, unaccompanied individuals in shelter or transitional housing increased 5.6%. Since 2020, they are down 9.7% in emergency shelters but up 4.1% in transitional housing; 9 unaccompanied minors were in a youth‑specific shelter.
+
+### Adults
+- FACT: Homelessness programs - adults
+  - Topic: services_shelter_adults
+  - Content: Project Reconnect is the District's diversion and rapid exit referral-based program for single adults or adult-only families. They keep individuals from ever experiencing homelessness – or to return individuals to housing as quickly as possible after experiencing homelessness – by providing short-term assistance. 
+
+### Families
+
+- FACT: Shelter and transitional housing – families  
+  - Topic: services_shelter_families  
+  - Content: From 2023–2024, families in shelter or transitional housing rose 38.6%. Since 2020, families in emergency shelters are down 50.4%, while those in transitional housing are up 32.4%; no pregnant or parenting minors were counted in 2024.
+
+- FACT: Homelessness programs - families
+  - Topic: services_shelter_families
+  - Content: The Homeless Prevention Program (HPP) works directly with families in the District of Columbia who are at risk of homelessness so they can remain safely housed within their communities. It helps by strengthen a family’s existing support networks, minimize disruption, and prevent shelter entry whenever possible. HPP providers can also facilitate mediation between families and their landlords or hosts. 
+
+### Unsheltered persons
+
+- FACT: Unsheltered persons  
+  - Topic: unsheltered_detail  
+  - Content: In 2024, 900 people were unsheltered: 887 unaccompanied adults, 1 unaccompanied 17‑year‑old, and 5 families (5 adults, 7 children). Unsheltered unaccompanied person counts are up 8.2% since 2023 and 36% since 2020.
+
+- FACT: Camping in informal campsites
+  - Topic: unsheltered_camping
+  - Content: Unsheltered people camp in the woods to avoid detection, but have to dismantle their campsites every morning. They have to evade police and aim to not look homeless.
+
+---
+
+## Income and employment
+
+- FACT: Income and employment – unaccompanied adults  
+  - Topic: income_unaccompanied  
+  - Content: Unaccompanied adults report lower employment and income rates than adults in families. Among those with income, most rely on benefits as their primary source, often disability income rather than wages.
+
+- FACT: Income and employment – adults in families  
+  - Topic: income_families  
+  - Content: Adults in families are more likely to have income and employment than unaccompanied adults. Still, many depend on public assistance like TANF as their main income, reflecting ongoing economic instability.
+
+- FACT: Homelessness programs - rent subsidies
+  - Topic: income_subsidies
+  - Content: DC Flex offers flexible, shallow rent subsidies to individuals and families facing housing instability. The program provides funds that can be used toward rent when unexpected expenses, emergencies, or limited resources make it difficult to cover the full payment.
+
+---
+
+## Shelters and Resources
+
+### RESOURCE: Downtown Day Services Center
+- Type: day_services_center
+- Population: all
+- Access: weekday hub with on-site services through case manager
+- Features:
+  - Amenities (Restrooms, Showers, Laundry, Phone, Computers, Mail Services)
+  - Lunch and snacks
+  - Housing Support
+  - Case Management
+  - Non-driver identification
+  - Medicaid application
+  - Health and Dental Care
+  - Counseling
+  - Legal guidance
+  - Emergency clothing
+  - Community and Activities
+
+### RESOURCE: Adams Place Day Center
+- Type: day_services_center
+- Population: adult 18+ male-identifying
+- Access: weekday hub with on-site services through case manager
+- Features:
+  - hot dinner
+  - access to case management staff
+  - housing and financial counseling
+  - showers
+  - a bed on a nightly basis
+
+### RESOURCE: 801 East Day Center
+- Type: day_services_center
+- Population: adult 18+ male-identifying
+- Access: weekday hub with on-site services through case manager
+- Features:
+  - hot dinner
+  - access to housing-focused case management
+  - showers
+  - a bed on a nightly basis
+

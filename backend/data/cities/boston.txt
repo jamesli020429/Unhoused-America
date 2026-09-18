@@ -1,0 +1,137 @@
+# City: Boston, MA  
+# Scope: Homelessness context and resources  
+# Timeframe: Data primarily from 2021–2025 (Greater Boston and statewide context included)
+
+## Summary (High-level)
+- Boston’s total homeless count fell 4.3% from 2024 to 2025, after several years of post‑pandemic increases and system strain.  
+- Most people are sheltered; Boston has one of the lowest unsheltered rates among major U.S. cities, but regional homelessness has risen.  
+- Families, children, migrants, and people of color face the sharpest pressures in a very tight, expensive housing market with complex, time‑limited supports.
+
+---
+
+## Overall statistics and trends
+
+### Population level and trends
+
+- FACT: Overall homeless population  
+  - City: Boston  
+  - Topic: population_trend  
+  - Content: From 2024 to 2025, Boston’s homeless count fell 5,756→5,506 (–4.3%). Adults increased 2,036→2,122 (+4.2%). People in families fell 3,720→3,384 (–9%).
+
+- FACT: Unsheltered vs sheltered  
+  - City: Boston  
+  - Topic: unsheltered_vs_sheltered  
+  - Content: In 2025, 132 adults were unsheltered (slightly fewer than 2024), and no families were unsheltered, as since 2007. About 2.4% of Boston’s homeless population was unsheltered.
+
+- FACT: State and regional trends  
+  - City: Greater Boston / Massachusetts  
+  - Topic: population_trend_regional  
+  - Content: Massachusetts has seen one of the largest recent homelessness increases, above the U.S. 18% rise. In Greater Boston, nearly all 2023–2024 growth came from people in families, often outside Boston.
+
+### Demographic patterns
+
+- FACT: Race and ethnicity  
+  - Topic: demographics_race  
+  - Content: In Greater Boston, Black residents experience homelessness at about 17× the rate of White residents, and Latino residents at about 5×. These racial disparities have recently worsened.
+
+- FACT: Age groups  
+  - Topic: demographics_age  
+  - Content: In Greater Boston, homelessness among youth under 18 rose roughly 72% from 2023–2024. In Boston, unaccompanied youth (up to 24) decreased slightly 132→128, with almost all staying in shelters or programs.
+
+- FACT: Migrants and new arrivals  
+  - Topic: demographics_migrants  
+  - Content: In about two years, more than 20,000 migrants, many from Haiti and Central/South America and some fleeing gang violence, have arrived in MA. Many depend on shelters or unstable, overcrowded, or unsafe housing.
+
+### Contributing factors (city- and region-specific)
+
+- FACT: Housing market pressures  
+  - Topic: contributing_factors_housing  
+  - Content: Greater Boston’s crisis reflects high rents, restrictive zoning, and costly development. MA was short nearly 200,000 low‑income homes by 2021, and shelters were already full. Two‑bedrooms in nearby cities can exceed $2,400.
+
+- FACT: Employment and wages  
+  - Topic: contributing_factors_employment  
+  - Content: Even with steady full‑time work, many cannot meet high rent, income, or occupancy requirements. Migrant and low‑income families are often rejected by landlords or pushed into shelters, doubling up, or cars and abandoned spaces.
+
+- FACT: Policy environment (Right-to-Shelter and time limits)  
+  - Topic: contributing_factors_policy  
+  - Content: MA’s Right‑to‑Shelter for families is now capped at 7,500 families and limited to roughly 9‑month stays in state shelters. Providers warn these limits, in a tight market, will push some families into unsheltered or street homelessness.
+
+---
+
+## Life paths into homelessness and barriers
+
+### Common life paths (general)
+
+- PATHWAY: Escaping domestic or sexual violence  
+  - Applies to: Adult survivors of domestic violence and sexual assault  
+  - Content: Some adults become homeless after fleeing domestic or sexual violence. Boston tracks “adult survivors of domestic violence” as a subpopulation, whose counts fell from 385 in 2024 to 174 in 2025, closer to earlier years.
+
+- PATHWAY: Family and child homelessness  
+  - Applies to: Families with children in Greater Boston  
+  - Content: Families and children drive much of Greater Boston’s increase. Between 2023 and 2024, people in families made up nearly all new homelessness, and youth under 18 saw especially large rate increases tied to housing instability.
+
+- PATHWAY: Migrants fleeing violence and instability  
+  - Applies to: Newly arrived migrants  
+  - Content: Many migrants flee gang violence, political instability, or economic collapse and then face MA’s severe housing shortage. They confront sky‑high rents, few vacancies, language barriers, and limited access to permanent affordable units.
+
+- PATHWAY: School-connected family homelessness  
+  - Applies to: Families with children in Boston Public Schools  
+  - Content: Groups serving Boston Public Schools families report long lists of households couch‑surfing, in cars, facing eviction, or losing shelter beds. Many wait months or years for vouchers or affordable units to become available.
+
+- PATHWAY: Administrative and timing failures in housing programs  
+  - Applies to: Families using state assistance (e.g., HomeBase)  
+  - Content: Some families lose apartments when subsidy approvals, like HomeBase funds, arrive too late. Even after finding a willing landlord, slow processing or bureaucratic delays can cause units to be rented to others instead.
+
+### Barriers to exiting homelessness
+
+- BARRIER: Lack of affordable units  
+  - Applies to: Most single adults and families  
+  - Content: There are far fewer affordable units than households that need them. Waitlists for public and subsidized housing can last many years or even decades, so families can remain in shelter or unstable situations for long periods.
+
+- BARRIER: System at “breaking point”  
+  - Applies to: Families and individuals seeking help  
+  - Content: Providers describe the shelter and housing aid system as overwhelmed. Shelters are full, caseloads are huge, and groups that once placed nearly every family now routinely turn people away because no beds or units are available.
+
+- BARRIER: Policy limits and time pressure in shelters  
+  - Applies to: Families in state-run shelters  
+  - Content: Nine‑month stay limits compress the time families have to secure housing, even though it often takes a year or more. Caseworkers sometimes have only weeks to find units, raising the risk of exits from shelter into street homelessness.
+
+- BARRIER: Documentation and bureaucratic complexity  
+  - Applies to: Low-income residents and migrants  
+  - Content: Vouchers and affordable housing require detailed housing histories, IDs, credit records, and precise paperwork. Language gaps, missing documents, or small errors can derail applications, making the system feel impossible to navigate.
+
+- BARRIER: Racial inequities in housing and homelessness  
+  - Applies to: Black and Latino residents in Greater Boston  
+  - Content: Black and Latino residents experience homelessness at far higher rates than White residents. These gaps reflect long‑standing inequities in zoning, investment, and housing access that shape who becomes and remains homeless.
+
+- BARRIER: Overwhelmed assistance infrastructure  
+  - Applies to: Households seeking help from nonprofits and legal services  
+  - Content: Nonprofits and legal aid groups face huge demand with limited staff. Advocates say the old assumption that “there is always somewhere to send people for housing help” no longer reflects reality for many families and individuals.
+
+---
+
+## Additional local context: shelter and housing responses (Boston)
+
+- FACT: Shelter utilization and expansion (adult individuals)  
+  - Topic: services_shelter_individuals  
+  - Content: From 2024–2025, adults in emergency shelters rose 1,544→1,648 as Boston added beds. New programs for men and women aimed to deconcentrate large shelters and spread clients across multiple, less crowded sites.
+
+- FACT: Shelter and transitional housing for families  
+  - Topic: services_shelter_families  
+  - Content: In Boston, people in families in emergency shelter fell 3,670→3,365 and family households 1,125→1,081 from 2024–2025. People in families in transitional housing dropped from 50 to 19, indicating a smaller transitional stock.
+
+- FACT: Veterans  
+  - Topic: subpopulation_veterans  
+  - Content: Homeless veterans in Boston fell from 228 to about 194 between 2024–2025, with very few unsheltered veterans. Since 2011, veteran homelessness has dropped by more than half due to sustained strategies and partnerships.
+
+- FACT: Unaccompanied youth  
+  - Topic: subpopulation_youth  
+  - Content: Unaccompanied youth (up to age 24) decreased slightly in Boston, from 132 to 128 between 2024–2025. Nearly all were in shelters or programs; only one unsheltered youth was identified in the 2025 street count.
+
+- FACT: Exits to permanent housing  
+  - Topic: housing_exits  
+  - Content: In 2024, 2,838 people exited homelessness to permanent housing in Boston, up from 2,019 in 2023. These exits included adult individuals, 545 families, unaccompanied youth, and 174 veterans, showing expanded housing placements.
+
+- FACT: Recent supportive and affordable housing projects  
+  - Topic: housing_initiatives  
+  - Content: Recent projects add permanent supportive and affordable units for adults, youth, and families, including 140 Clarendon, The Lyndia, 37 Wales Street, Brunson Liberty House, a 274‑unit CoC grant, and new units at 900 Morrissey and 41 LaGrange.

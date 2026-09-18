@@ -1,0 +1,19 @@
+name = "unhoused-america-backend"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "unhoused-personas"
+database_id = "f1a51b00-fdfb-43a3-81fd-85eb651d0956"
+
+# Environment variables (set these with: wrangler secret put <NAME>)
+# Required secrets:
+# - GEMINI_API_KEY
+# - CLOUDFLARE_ACCOUNT_ID  
+# - CLOUDFLARE_API_TOKEN
+
+[vars]
+# Non-secret environment variables can go here

@@ -1,0 +1,237 @@
+# City: New York, NY  
+# Scope: Homelessness context and resources  
+# Timeframe: Data primarily from 2020–2025 (city and statewide context)
+
+## Summary (High-level)
+- Between January 2022 and January 2024, homelessness in New York State more than doubled; from 2023–2024 it rose 53%, far faster than the U.S. overall.  
+- In 2024, over 158,000 New Yorkers were homeless (about 1 in 5 of all U.S. homeless people), with New York City driving most of the increase and a very large share of children.  
+- New York has extremely low unsheltered rates due to its right-to-shelter and extensive emergency beds, but faces severe pressures from high rents, evictions, asylum-seeker arrivals, and housing shortages.
+
+---
+
+## Overall statistics and trends
+
+### Population level and trends (state + city)
+
+- FACT: Statewide growth in homelessness  
+  - City: New York (Statewide context)  
+  - Topic: population_trend  
+  - Content: Statewide homelessness more than doubled between January 2022 and January 2024. From 2023–2024 alone, it grew 53%, compared with about 21% growth in the rest of the nation.
+
+- FACT: National share and rate  
+  - City: New York (Statewide)  
+  - Topic: population_national_share  
+  - Content: In 2024, more than 158,000 people in New York experienced homelessness, about 1 in 5 of all people homeless in the U.S. The state’s rate was ~8 per 1,000 residents, among the highest nationally.
+
+- FACT: New York City’s role in statewide trends  
+  - City: New York City  
+  - Topic: population_trend_nyc  
+  - Content: New York City accounted for about 93–95% of the statewide increase. People in DHS shelters grew from 45,343 in January 2022 to 89,119 in January 2024, including over 34,000 asylum seekers.
+
+- FACT: NYC scale (recent peak)  
+  - City: New York City  
+  - Topic: population_recent_peak  
+  - Content: In November 2025, about 101,978 people slept in NYC shelters nightly, the highest since the Great Depression. Thousands more were unsheltered or doubled up, bringing the total without stable housing to an estimated 350,000+.
+
+- FACT: Children and families (statewide)  
+  - City: New York (Statewide)  
+  - Topic: population_children_state  
+  - Content: Homeless children increased from about 20,299 in 2022 to 50,773 in 2024. Nearly one in three people experiencing homelessness statewide is a child, one of the highest child shares in the U.S.
+
+- FACT: Children and families (NYC schools)  
+  - City: New York City  
+  - Topic: population_children_nyc_schools  
+  - Content: In the 2024–2025 school year, more than 156,000 NYC students experienced homelessness at some point, about one in eight city schoolchildren.
+
+- FACT: NYC shelter composition (families vs singles)  
+  - City: New York City  
+  - Topic: population_families_vs_singles  
+  - Content: In November 2025, about 68% of shelter residents were members of homeless families, including 34,393 children. Around 32,668 single adults slept in shelters, and about 31,629 shelter residents were classified as New Arrivals.
+
+- FACT: Pandemic era trends  
+  - City: New York (Statewide)  
+  - Topic: population_trend_pandemic  
+  - Content: Homelessness declined in New York between 2020 and 2022 amid pandemic protections. After eviction moratoriums ended, it rose rapidly, more than doubling by 2024 while the rest of the U.S. increased much more slowly.
+
+---
+
+## Demographic patterns
+
+- FACT: Race and ethnicity – statewide  
+  - Topic: demographics_race_state  
+  - Content: Statewide, Black and Latino/a/e/x New Yorkers are overrepresented among people experiencing homelessness. White residents are the majority of the population but under half of the unhoused, while Black residents are a much larger share of the unhoused.
+
+- FACT: Race and ethnicity – detailed statewide  
+  - Topic: demographics_race_state_detail  
+  - Content: White people are about 68.5% of New York’s population but around 46% of the unhoused. Black residents are about 15.9% of the population yet roughly 51% of the unhoused, showing stark racial inequity.
+
+- FACT: Race and ethnicity – NYC shelters  
+  - Topic: demographics_race_nyc  
+  - Content: Among heads of household in NYC shelters, about 56% are Black, 32% Hispanic/Latinx, 7% White, and less than 1% Asian-American or Native American. A small share is reported as unknown race/ethnicity.
+
+- FACT: Age groups – statewide  
+  - Topic: demographics_age_state  
+  - Content: More than 50,000 people experiencing homelessness in New York are children, and over 14,000 are seniors. The state overall has relatively low shares of senior homelessness compared to some states but large absolute numbers.
+
+---
+
+## Subpopulations and conditions
+
+- FACT: Veterans (statewide)  
+  - Topic: subpopulation_veterans_state  
+  - Content: Statewide veteran homelessness remains low, below 1% of all people experiencing homelessness. It rose only about 1%, with stability linked to targeted rental assistance and outreach such as HUD‑VASH.
+
+- FACT: Veterans (NYC)  
+  - Topic: subpopulation_veterans_nyc  
+  - Content: New York is among the states with low shares of veterans in the homeless population. This is seen as a success of sustained federal and local investments focused specifically on veterans.
+
+- FACT: Seniors and chronic homelessness (statewide)  
+  - Topic: subpopulation_seniors_chronic  
+  - Content: New York has relatively low shares of seniors (about 2.5%) and chronically homeless people (about 3.6%) compared with many states. However, the absolute numbers remain significant in a large population.
+
+- FACT: Asylum seekers and New Arrivals (NYC)  
+  - Topic: subpopulation_asylum_seekers  
+  - Content: Tens of thousands of asylum seekers arrived in NYC, many with no housing options. By January 2024, about 34,000 asylum seekers were in DHS shelters and around 68,000 were housed by the city overall.
+
+- FACT: Disabilities and health (NYC longer-term residents)  
+  - Topic: conditions_disability_nyc  
+  - Content: Among longer-term NYC shelter residents (non-New Arrivals), 43% of families with children, 65% of single adults, and 75% of adult-only families have a disability that needs a facility-related accommodation.
+
+- FACT: Health and behavioral health (statewide)  
+  - Topic: conditions_statewide  
+  - Content: About 10% of people experiencing homelessness statewide have severe mental illness or chronic substance use disorders. These conditions compound barriers to housing and stability.
+
+- FACT: Unsheltered population characteristics (NYC)  
+  - Topic: conditions_unsheltered_nyc  
+  - Content: Most unsheltered individuals in NYC are people living with mental illness or other severe health problems. Reliable counts of unsheltered people are difficult, and official estimates may be low.
+
+---
+
+## Unsheltered vs sheltered and system capacity
+
+- FACT: Unsheltered share – statewide  
+  - City: New York (Statewide)  
+  - Topic: unsheltered_vs_sheltered  
+  - Content: New York has the lowest share of unsheltered people in the U.S., at about 3.6%, compared with roughly 44% in the rest of the country. This reflects robust shelter mandates and infrastructure.
+
+- FACT: Emergency shelter capacity  
+  - City: New York (Statewide)  
+  - Topic: services_shelter_capacity  
+  - Content: New York has about 127,759 year‑round emergency housing beds, including roughly 122,091 in emergency shelters. This is far more than any other state and is largely due to NYC’s right‑to‑shelter obligations.
+
+- FACT: Supportive and permanent housing capacity  
+  - City: New York (Statewide)  
+  - Topic: services_psh_capacity  
+  - Content: New York has about 52,462 permanent supportive housing units, second only to California. It also has over 21,600 permanent housing beds, but far fewer rapid rehousing beds than some other large states.
+
+---
+
+## Contributing factors and reasons for homelessness
+
+- FACT: Housing affordability crisis (statewide)  
+  - Topic: contributing_factors_housing_costs  
+  - Content: Long‑standing housing affordability problems, rising rents, and a shortage of affordable units push many households into homelessness. HUD cites evictions, rent increases, and limited affordable housing as key drivers.
+
+- FACT: Asylum seekers and cost pressures  
+  - Topic: contributing_factors_asylum_seekers  
+  - Content: Tens of thousands of asylum seekers arriving with no housing options drove much of the recent surge, especially in NYC. Their sheltering needs sharply increased public spending and system demand.
+
+- FACT: Evictions and post‑moratorium impact  
+  - Topic: contributing_factors_evictions  
+  - Content: After pandemic eviction moratoriums ended, eviction filings and proceedings resumed. This change coincided with a sharp rise in homelessness between 2022 and 2024 as more families lost housing.
+
+- FACT: Employment and wages  
+  - Topic: contributing_factors_employment  
+  - Content: About half of people experiencing homelessness statewide are employed, yet still cannot afford housing. Rents outpacing wages mean work alone is no longer a guarantee against homelessness.
+
+- FACT: Racialized inequities  
+  - Topic: contributing_factors_racial_inequity  
+  - Content: Black and Latino/a/e/x New Yorkers are far more likely to experience homelessness than their share of the population suggests. These disparities reflect long‑standing inequities in housing, wages, and systems.
+
+- FACT: Causes of homelessness – NYC families  
+  - Topic: contributing_factors_families_nyc  
+  - Content: Surveys of homeless families in NYC cite eviction, severe overcrowding or doubling up, domestic violence, job loss, and unsafe housing as the main immediate triggers for entering shelter.
+
+- FACT: Mental health, substances, and fentanyl  
+  - Topic: contributing_factors_behavioral_health  
+  - Content: Rising mental health challenges, substance use, and the spread of fentanyl in street drugs are noted as contributing to homelessness and making recovery and stability more difficult.
+
+---
+
+## NYC policy frameworks and strategies
+
+### Prevention (keep people housed)
+
+- FACT: Prevention focus  
+  - City: New York City  
+  - Topic: prevention_overview  
+  - Content: NYC and New York State prioritize prevention to keep people out of shelters. Strategies include supplementing shelter allowances, expanding rental vouchers, and strengthening services for at‑risk households.
+
+- FACT: Targeted prevention steps  
+  - City: New York City  
+  - Topic: prevention_measures  
+  - Content: Key steps include better discharge planning from prisons, expanded housing options for people involved in the justice system, support for at‑risk seniors, and improved outreach and enforcement related to unsafe housing.
+
+### Increasing pathways to permanent, affordable housing
+
+- FACT: Rental assistance and housing supply  
+  - City: New York City  
+  - Topic: housing_pathways_vouchers  
+  - Content: NYC seeks to raise voucher amounts to fair market rent, expand voucher eligibility, and increase access to deeply affordable housing. Combating source‑of‑income discrimination and engaging landlords are key tactics.
+
+- FACT: Supportive housing expansion  
+  - City: New York (State and City)  
+  - Topic: housing_pathways_supportive  
+  - Content: The state is implementing a five‑year, $25 billion plan to create or preserve 100,000 affordable homes, including supportive housing. NYC also aims to aggressively build and maintain supportive housing stock.
+
+- FACT: Youth and aftercare supports  
+  - City: New York City  
+  - Topic: housing_pathways_youth_aftercare  
+  - Content: Plans call for more housing options for homeless youth, more housing specialists, and stronger aftercare services. The goal is to ensure people remain housed after leaving shelters.
+
+### Support for unsheltered neighbors
+
+- FACT: Alternatives to traditional shelters  
+  - City: New York City  
+  - Topic: services_unsheltered_alternatives  
+  - Content: NYC plans to expand Safe Havens and other low‑barrier alternatives to shelters. These options, combined with outreach, are meant to better meet the needs of people living on streets or in hospitals.
+
+- FACT: Outreach and medical respite  
+  - City: New York City  
+  - Topic: services_unsheltered_outreach_respite  
+  - Content: Proposals include equipping outreach teams with more tools, using an “all hands‑on deck” approach, and creating robust medical respite programs. These efforts aim to move people from streets to stable housing.
+
+### Support for sheltered neighbors
+
+- FACT: Enhancing shelter supports  
+  - City: New York City  
+  - Topic: services_sheltered_supports  
+  - Content: NYC aims to improve services within shelters, including more support for domestic violence survivors, economic empowerment, help for formerly incarcerated people, and stronger supports for runaway and homeless youth.
+
+### Integrating housing and homelessness policy
+
+- FACT: Inter-agency coordination  
+  - City: New York City  
+  - Topic: policy_integration  
+  - Content: City leaders emphasize better coordination across agencies so housing and homelessness policy are aligned. The goal is a comprehensive response that prioritizes permanent, affordable housing.
+
+### Long-term vision
+
+- FACT: Long-term housing vision  
+  - City: New York City  
+  - Topic: policy_long_term  
+  - Content: Over time, NYC seeks to shift funding toward permanent, affordable housing as the shelter census falls. A long‑term vision would match resources to actual needs and use better data to evaluate outcomes.
+
+- FACT: Monitoring and accountability (statewide)  
+  - City: New York (Statewide)  
+  - Topic: policy_monitoring  
+  - Content: State leaders are urged to track goals, spending, and results for current housing plans more closely. Recommendations include expanding rental assistance, eviction defense, and housing aid for families with children.
+
+---
+
+## Rights and legal framework
+
+- FACT: Right to shelter (NYC)  
+  - City: New York City  
+  - Topic: legal_right_to_shelter  
+  - Content: NYC’s legal right‑to‑shelter framework, in place since 1981, has provided a way off the streets for more than one million people. It underpins the city’s large shelter system and low unsheltered rates.

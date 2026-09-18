@@ -1,0 +1,167 @@
+# City: Los Angeles, CA  
+# Scope: Homelessness context and resources  
+# Timeframe: Data primarily from 2023–2024 (LA County and City of LA)
+
+## Summary (High-level)
+- In 2024, LA County counted ~75,312 people experiencing homelessness; 45,252 were in the City of LA. Countywide totals dipped slightly, and shelter use rose.  
+- Unsheltered homelessness declined while shelter placements and rehousing flow increased, partly due to encampment resolutions and coordinated emergency efforts.  
+- High rents, housing shortages, income inequality, mental illness, substance use, climate, and governance challenges all contribute to LA’s large and visible homeless population.
+
+---
+
+## Overall statistics and trends
+
+### Population level and trends
+
+- FACT: Overall homeless population  
+  - City: Los Angeles (County and City)  
+  - Topic: population_trend  
+  - Content: In 2024, LA County’s homeless population was about 75,312, down ~0.27% from 2023. The City of LA’s count was about 45,252, a 2.2% decrease from the prior year.
+
+- FACT: Unsheltered vs sheltered – County  
+  - City: Los Angeles County  
+  - Topic: unsheltered_vs_sheltered  
+  - Content: Countywide in 2024, about 52,365 people were unsheltered and 22,847 were sheltered. Compared with 2023, unsheltered homelessness fell 5.1% while sheltered homelessness rose 12.7%.
+
+- FACT: Unsheltered vs sheltered – City of LA  
+  - City: Los Angeles (City)  
+  - Topic: unsheltered_vs_sheltered_city  
+  - Content: In the City of LA, unsheltered homelessness dropped by about 10.4% from 2023 to 2024. Over the same period, the number of people in shelter increased by roughly 17.7%.
+
+- FACT: Dwelling types (vehicles, tents, makeshift)  
+  - City: Los Angeles  
+  - Topic: unsheltered_dwellings  
+  - Content: Between 2023 and 2024, counts in cars, vans, and tents fell modestly, RVs stayed nearly flat, and makeshift shelters dropped by about 30%. Overall, these dwelling types decreased roughly 9%.
+
+- FACT: System performance – rehousing flow  
+  - City: Los Angeles County  
+  - Topic: housing_system_performance  
+  - Content: In 2023, LA’s rehousing system logged a record number of permanent housing placements. From 2022–2023, street‑to‑interim placements via outreach rose nearly 50%, and interim‑to‑permanent moves rose about 25%.
+
+- FACT: Chronic homelessness trend  
+  - City: Los Angeles CoC  
+  - Topic: population_trend_chronic  
+  - Content: The CoC reports a drop in chronic homelessness, suggesting the coordinated emergency response and rehousing strategies are helping people with long‑term homelessness exit streets and encampments.
+
+### Demographic patterns
+
+- FACT: Age groups  
+  - Topic: demographics_age  
+  - Content: From 2023–2024, adults 18–54 experiencing homelessness decreased by about 2.7%, while older adults 55+ increased 6.5%. The number of children (0–17) changed little.
+
+- FACT: Race and ethnicity (overall)  
+  - Topic: demographics_race  
+  - Content: Black residents remain disproportionately represented, reflecting historic exclusionary policies. Latinos are the largest ethnic group experiencing homelessness, making up about 43% when including mixed categories.
+
+- FACT: Race and ethnicity (detailed)  
+  - Topic: demographics_race_detail  
+  - Content: In 2024, about 31% of people experiencing homelessness identified as Black, around 29% as White, several percent as Indigenous, Asian, Pacific Islander, or multiracial, and more than 40% identified as Hispanic/Latino/a/e alone or with another race.
+
+- FACT: Gender diversity  
+  - Topic: demographics_gender  
+  - Content: Men and boys were the largest group, with more than 46,000 people. Women and girls accounted for about 23,000, and smaller numbers identified as transgender, non‑binary, culturally specific identities, or more than one gender.
+
+### Health and behavioral health
+
+- FACT: Serious mental illness (SMI)  
+  - Topic: conditions_smi  
+  - Content: In 2024, about 24% of unhoused people in the LA CoC reported serious mental illness, slightly down from 25% in 2023. Unsheltered SMI counts declined, while more people with SMI were in shelter.
+
+- FACT: Substance use disorder (SUD)  
+  - Topic: conditions_sud  
+  - Content: About 27% reported substance use disorder in 2024, down from 30% in 2023. Unsheltered SUD counts dropped notably, while sheltered SUD counts increased, indicating more engagement indoors.
+
+---
+
+## Contributing factors and reasons for homelessness
+
+- FACT: Economic hardship and first-time homelessness  
+  - Topic: contributing_factors_economic  
+  - Content: Among newly homeless unsheltered people, 54% cited economic hardship as a reason. Others mentioned weakened social networks, disabling health conditions, system discharge, violence, or other causes, often in combination.
+
+- FACT: Housing costs and wages  
+  - Topic: contributing_factors_housing_costs  
+  - Content: Unaffordable rent is a central driver. The average two‑bedroom rent in LA County is about $2,498, requiring roughly $48 an hour to afford, which many renters do not earn.
+
+- FACT: Housing supply and permits  
+  - Topic: contributing_factors_housing_supply  
+  - Content: Nearly 495,000 California households lack access to an affordable home. Building permits fell 7% in 2023, and early 2024 multifamily permits were a third lower than the same period in 2023.
+
+- FACT: Evictions and rental debt  
+  - Topic: contributing_factors_evictions  
+  - Content: From February to December 2023, about 77,000 eviction notices were filed in the City of LA. Around 96% were for non‑payment of rent, most with three‑day notices, and average rent owed was about $3,774.
+
+- FACT: Role of population size and density  
+  - Topic: contributing_factors_population  
+  - Content: LA County has about 10 million residents across 88 cities and a large urban core. High population and density increase housing pressure and make homelessness more visible in central neighborhoods.
+
+- FACT: Climate and geography  
+  - Topic: contributing_factors_climate  
+  - Content: LA’s mild climate and outdoor spaces (such as beaches and parks) make unsheltered survival more feasible. This can draw people from other regions and contributes to large, visible encampments.
+
+- FACT: Mental health, SUD, and service gaps  
+  - Topic: contributing_factors_behavioral_health  
+  - Content: Many unhoused people live with serious mental illness or substance use disorders. Limited, hard‑to‑access treatment and ongoing service gaps worsen conditions and complicate long‑term stability.
+
+- FACT: Income inequality  
+  - Topic: contributing_factors_income_inequality  
+  - Content: LA has a wide gap between high‑income and low‑income residents. This inequality leaves many households on the edge of housing insecurity, especially when rents rise and wages do not keep pace.
+
+- FACT: Service capacity limits  
+  - Topic: contributing_factors_service_capacity  
+  - Content: Despite major investments, shelters and supportive programs often cannot meet demand. System capacity, staffing, and funding constraints mean many people still do not get the help they need when they need it.
+
+- FACT: Governance and legal context  
+  - Topic: contributing_factors_governance  
+  - Content: LA County’s fragmented political structure complicates collective action. Legal debates, including around ordinances like 41.18, shape how encampments and public space are managed and affect service delivery.
+
+- FACT: Short-term vs comprehensive solutions  
+  - Topic: contributing_factors_solutions  
+  - Content: Short‑term responses alone have not fully addressed root causes such as housing costs, income inequality, and behavioral health gaps. Sustained, comprehensive strategies are needed to change long‑term trends.
+
+- FACT: Rent and homelessness link (national research)  
+  - Topic: contributing_factors_rent_elasticity  
+  - Content: National research cited for LA indicates that each $100 rise in median rent is linked to roughly a 9% increase in estimated homelessness rates. LA’s high and rising rents amplify this effect locally.
+
+---
+
+## Subpopulations and specific groups
+
+- FACT: Families  
+  - City: Los Angeles CoC  
+  - Topic: subpopulation_families  
+  - Content: From 2023–2024, people in families experiencing homelessness increased from about 10,477 to 10,710 (≈2.2%). Families remain a significant share, even amid some system gains.
+
+- FACT: Transitional age youth  
+  - City: Los Angeles CoC  
+  - Topic: subpopulation_youth  
+  - Content: Transitional age youth counts fell from about 2,871 to 2,406 (≈16% drop) between 2023–2024. This suggests some progress but youth homelessness remains a priority focus.
+
+- FACT: Veterans  
+  - City: Los Angeles CoC  
+  - Topic: subpopulation_veterans  
+  - Content: Veterans experiencing homelessness decreased from roughly 3,878 to 2,991 (≈23% drop). This indicates improved housing outcomes for veterans compared to some other groups.
+
+---
+
+## System response and priorities
+
+- FACT: Coordinated emergency response  
+  - City: Los Angeles  
+  - Topic: system_response  
+  - Content: Leaders attribute 2024’s declines in unsheltered and chronic homelessness to an unprecedented coordinated emergency response, including encampment resolutions and strengthened rehousing efforts.
+
+- FACT: Strategic priorities – LAHSA  
+  - City: Los Angeles  
+  - Topic: system_priorities  
+  - Content: LAHSA’s strategic areas focus on addressing the emergency, improving rehousing efficiency, clarifying purpose and accountability, reforming contracting and grants, and centering equity in all actions.
+
+- FACT: Rehousing system goals  
+  - City: Los Angeles  
+  - Topic: housing_system_goals  
+  - Content: New goals call for at least a 20% increase in street‑to‑interim placements and interim‑to‑permanent housing moves next year. Progress will be tracked through key performance indicators.
+
+- FACT: Encampment resolutions and dwelling changes  
+  - City: Los Angeles  
+  - Topic: encampment_response  
+  - Content: Encampment resolution work contributed to fewer makeshift shelters and vehicle‑based or tent dwellings. These changes align with more people leaving large encampments or entering other shelter and housing options.

@@ -1,0 +1,213 @@
+# City: Atlanta, GA  
+# Scope: Homelessness context and resources  
+# Timeframe: Data primarily from 2016–2024 (city and state context)
+
+## Summary (High-level)
+- In 2024, Atlanta counted 2,867 people experiencing homelessness across 243 neighborhoods, with about 1,827 sheltered and 1,040 unsheltered.  
+- Overall homelessness is down 30% since 2016, but rose 7% in the last year, driven by a 41% jump in unsheltered homelessness and increases in some subpopulations.  
+- High rates of mental illness, substance use, disability, trauma, and extreme housing costs drive needs; housing-focused strategies and supportive programs are central to the response.
+
+---
+
+## Overall statistics and trends
+
+### Population level and trends
+
+- FACT: Overall homeless population  
+  - City: Atlanta  
+  - Topic: population_trend  
+  - Content: In 2024, Atlanta counted 2,867 people experiencing homelessness. This is a 7% increase from 2023, but a 30% decrease since the first PIT Count in 2016.
+
+- FACT: Sheltered vs unsheltered  
+  - City: Atlanta  
+  - Topic: unsheltered_vs_sheltered  
+  - Content: Of the 2,867 people in 2024, 1,223 were in emergency shelter, 604 in transitional housing, and 1,040 were unsheltered. Unsheltered homelessness increased by about 41% compared to the prior year.
+
+- FACT: Families vs individuals (recent trends)  
+  - City: Atlanta  
+  - Topic: population_trend_household_type  
+  - Content: Recent PIT data show a 22% decrease in adults with children experiencing homelessness since earlier years. In 2024, there were 115 homeless families, with most in emergency shelters and a few unsheltered.
+
+- FACT: Long-term rehousing progress  
+  - City: Atlanta  
+  - Topic: housing_exits_trend  
+  - Content: Since 2016, Atlanta has housed over 12,500 people, including more than 2,000 households in 2023 alone. That year, 800 formerly unsheltered households were housed through rehousing efforts.
+
+### Demographic patterns
+
+- FACT: Gender patterns  
+  - Topic: demographics_gender  
+  - Content: Men and boys make up about 73% of people experiencing homelessness in Atlanta, while women and girls are about 25%. Around 2% identify as transgender, non‑binary, multiple genders, or culturally specific identities.
+
+- FACT: Age patterns  
+  - Topic: demographics_age  
+  - Content: About 35% of adults experiencing homelessness in Atlanta are over age 55. Youth and young adults (18–24) form a distinct group that has recently increased and needs tailored services.
+
+- FACT: Race and ethnicity – overall  
+  - Topic: demographics_race_overall  
+  - Content: About 86% of people experiencing homelessness in Atlanta are Black or African American. This pattern also appears among families, youth, and veterans, pointing to systemic racial disparities in who becomes homeless.
+
+- FACT: Race and ethnicity – families, youth, veterans  
+  - Topic: demographics_race_subgroups  
+  - Content: Among homeless families, 92% are Black. About 77% of homeless youth are Black, with some identifying as multiracial, and around 83% of homeless veterans are Black, with smaller shares White, multiracial, or other races.
+
+- FACT: Women and girls in families  
+  - Topic: demographics_gender_families  
+  - Content: Within homeless families, women and girls make up about 62%, a higher share than in the general homeless population. Reports from families show no adults identifying outside cisgender categories in this subgroup.
+
+- FACT: Youth gender diversity  
+  - Topic: demographics_gender_youth  
+  - Content: Among homeless youth, about 60% are men or boys and 35% women or girls. Around 4% identify as transgender and 2% as non‑binary or multigender, showing more gender diversity than among older adults.
+
+- FACT: Veterans and gender  
+  - Topic: demographics_gender_veterans  
+  - Content: Men make up about 91% of homeless veterans in the Atlanta CoC. Women represent about 8%, and around 1% identify with a culturally specific gender identity.
+
+---
+
+## Contributing factors and structural context
+
+- FACT: Housing market pressures (regional)  
+  - Topic: contributing_factors_housing  
+  - Content: Atlanta faces rapid growth, rising rents, and low vacancy rates. These conditions make it hard to prevent people from entering homelessness and threaten recent gains without sustained investment.
+
+- FACT: Mental health care and statewide context  
+  - Topic: contributing_factors_health_system  
+  - Content: Georgia ranks among the worst states for access to mental health services. Limited treatment options intersect with high rates of serious mental illness and substance use among people experiencing homelessness.
+
+- FACT: Affordable housing shortage (state context)  
+  - Topic: contributing_factors_affordable_units  
+  - Content: In Georgia, there are only about 34 affordable rental units for every 100 low‑income households. This shortage pushes many families into unstable housing or homelessness.
+
+- FACT: Education system impact  
+  - Topic: contributing_factors_schools  
+  - Content: About 4% of Atlanta Public Schools students experienced homelessness in the last year. This shows how housing instability touches many children and families beyond those counted in adult-focused systems.
+
+---
+
+## Subpopulations and local patterns
+
+### Subpopulations (PIT-defined)
+
+- FACT: Families  
+  - City: Atlanta  
+  - Topic: subpopulation_families  
+  - Content: In 2024, 115 homeless families were counted: 80 in emergency shelter, 29 in transitional housing, and 6 unsheltered. Family homelessness has decreased compared with prior years, helped by prevention and rapid exit strategies.
+
+- FACT: Youth (18–24)  
+  - City: Atlanta  
+  - Topic: subpopulation_youth  
+  - Content: In 2024, 188 youth were counted: 115 in emergency shelter, 39 in transitional housing, and 34 unsheltered. Youth homelessness has recently increased, prompting targeted outreach and housing solutions for unaccompanied and parenting youth.
+
+- FACT: Veterans  
+  - City: Atlanta  
+  - Topic: subpopulation_veterans  
+  - Content: In 2024, there were 287 homeless veterans: 115 in transitional housing, 82 in emergency shelter, and 101 unsheltered. Veteran homelessness rose but less than other groups, and plans prioritize housing and VA‑linked services.
+
+### Trauma, health, and experiences (Atlanta Mission data)
+
+- FACT: Trauma and violence  
+  - Topic: life_experiences_trauma  
+  - Content: Among Atlanta Mission clients, 81% have experienced physical or sexual abuse and 58% report trauma symptoms. Many grew up with unhealthy relationships and unresolved traumatic events.
+
+- FACT: Health conditions  
+  - Topic: life_experiences_health  
+  - Content: About 57% of clients report a chronic medical condition. Many also live with serious mental illness, substance use history, or disability, making stable housing and care coordination critical.
+
+- FACT: Social isolation and employment  
+  - Topic: life_experiences_social_economic  
+  - Content: More than half of Atlanta Mission clients say they usually spend free time alone, and around 46% are under‑ or unemployed. This isolation and unstable work complicate recovery and housing stability.
+
+- FACT: Substance use  
+  - Topic: life_experiences_substance_use  
+  - Content: About 30–40% of adults served report drug or alcohol abuse, and many have serious mental illness. This aligns with national estimates but shows that most people experiencing homelessness are not primarily defined by addiction.
+
+- FACT: Statewide veterans and poverty  
+  - Topic: state_context_veterans  
+  - Content: Across Georgia, about 40,000 veterans live in poverty, and more than 600 experience homelessness. This gives context to the veteran homelessness seen in Atlanta’s local counts.
+
+---
+
+## Preferences, barriers, and service system
+
+### Barriers to shelter and housing (PIT supplemental)
+
+- FACT: Shelter preferences and safety  
+  - Topic: barriers_shelter_safety  
+  - Content: In an unsheltered survey, 61% said they would use shelter if available, 34% would not, and 5% were unsure. Major deterrents included safety concerns, crowding, bed bugs, strict rules, and lack of privacy.
+
+- FACT: Preference for outdoor living  
+  - Topic: barriers_shelter_preference  
+  - Content: Some unsheltered people prefer to live outdoors rather than in traditional shelters. Reasons include mental health issues, discomfort with rules, and feeling safer or more in control outside.
+
+- FACT: Documentation and eligibility  
+  - Topic: barriers_documentation  
+  - Content: A small share of unsheltered people cannot qualify for housing programs because of missing documents like Social Security IDs or birth certificates. These documentation gaps block access to housing resources.
+
+- FACT: Paths from street to housing  
+  - Topic: housing_pathways_unsheltered  
+  - Content: Recent encampment work shows many unsheltered neighbors want to move directly from the street into housing, often preferring non‑congregate, private settings. In 2023, only 11% moved directly; most went through shelter first.
+
+- FACT: Income and benefits (unsheltered)  
+  - Topic: income_unsheltered  
+  - Content: About 61% of the unsheltered population reported no income. Only 7% reported earned income, and around 72% said they received no benefits; among those with benefits, SNAP was the most common.
+
+### Health access
+
+- FACT: Disability and treatment gaps  
+  - Topic: health_disability_treatment  
+  - Content: About 67% of surveyed people reported a disability, but only 37% were receiving treatment. This reveals major gaps between health needs and actual care for people experiencing homelessness.
+
+- FACT: Health insurance  
+  - Topic: health_insurance  
+  - Content: Nearly 60% of surveyed respondents lacked health insurance. Among those insured, most were covered by Medicaid or Medicare, showing dependence on public programs for care.
+
+---
+
+## Local programs and interventions
+
+### Housing-focused strategies (Partners for Home)
+
+- FACT: Housing as central solution  
+  - Topic: housing_strategy_core  
+  - Content: Stimulus funds allowed Atlanta to test rehousing strategies that sped up exits and stabilized lives. Housing with supports is the core solution, and the system has used this model to reduce homelessness since 2016.
+
+- FACT: Housing pipeline  
+  - Topic: housing_pipeline  
+  - Content: Atlanta is investing in more than 1,100 housing units dedicated to people exiting homelessness. These units are designed near resources like food, transport, and jobs, aiming to support long‑term stability.
+
+- FACT: Risk from funding loss  
+  - Topic: housing_funding_risk  
+  - Content: Leaders warn that without sustained funding similar to prior stimulus, gains are at risk. Rising rents and low vacancy could outpace current capacity to prevent and resolve homelessness.
+
+### State-level supportive housing (GHFA PSH)
+
+- FACT: Permanent Supportive Housing program  
+  - Topic: services_psh_state  
+  - Content: Georgia’s GHFA Permanent Supportive Housing program provides HUD‑funded rental assistance plus services for people with disabilities who are homeless, including serious mental illness, chronic substance use, and AIDS‑related conditions.
+
+- FACT: PSH goals  
+  - Topic: services_psh_goals  
+  - Content: GHFA PSH aims to increase housing stability, skills or income, and self‑sufficiency for people with disabilities. Local providers match rental assistance with tailored supportive services for this hard‑to‑reach population.
+
+### Atlanta Mission and service myths
+
+- FACT: Demand for help (Atlanta Mission)  
+  - Topic: services_demand  
+  - Content: In 2023, over 3,600 people came to Atlanta Mission seeking shelter. Many reported histories of trauma, violence, addiction, health problems, and job loss contributing to their homelessness.
+
+- FACT: Desire for change and work  
+  - Topic: services_motivation  
+  - Content: Atlanta Mission reports hundreds of people completing needs assessments, progressing through programs, and ending their homelessness. Many clients actively seek work and stability when given support and opportunities.
+
+- FACT: Employment supports  
+  - Topic: services_employment  
+  - Content: Through a partnership with Cara and its Next Steps vocational program, Atlanta Mission offers job training and placement. Many graduates achieve stable employment, though transportation, clothing, and ID remain barriers.
+
+- FACT: Women and children in shelters  
+  - Topic: services_women_children  
+  - Content: Nearly 4,000 women and children sought shelter at Atlanta Mission last year. Programs like My Sister’s House and the new Restoration House focus specifically on women and children’s safety, stability, and long‑term change.
+
+- FACT: Shelter as transformation, not “enabling”  
+  - Topic: services_model  
+  - Content: Atlanta Mission’s model aims to address root causes like trauma and unhealthy relationships, not just provide beds. Staff work with clients to build independence and break cycles of poverty and homelessness.

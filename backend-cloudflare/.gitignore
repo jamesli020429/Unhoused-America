@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Wrangler
+.wrangler/
+.dev.vars
+worker-configuration.d.ts
+
+# Environment
+.env
+.env.local
+
+# D1 local database
+.mf/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+#Data
+personas_backup.sql
+*personas_backup.sql

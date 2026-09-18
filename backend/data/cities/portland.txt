@@ -1,0 +1,191 @@
+# City: Portland, Oregon (Multnomah County)
+# Scope: Homelessness context, policies, and resources
+# Timeframe: Data primarily from 2021–2025
+
+## SUMMARY: Overall homelessness situation in Portland
+
+- PATTERN: Rapid growth in homelessness
+  - Content: Between January 2024 and January 2025, the estimated number of people experiencing homelessness in Multnomah County grew significantly, reaching around 14,400 people.
+- PATTERN: Shelters often near capacity
+  - Content: Most nights, shelter beds in Multnomah County are close to full, with a high percentage of beds occupied.
+- PATTERN: More people entering than exiting homelessness
+  - Content: Over recent years, more people have been entering homelessness than exiting into permanent housing, which causes the overall number of unhoused residents to keep rising.
+- PATTERN: Heavy reliance on public funding for housing
+  - Content: City and county tax dollars support thousands of people who were previously homeless or at high risk of homelessness, including through subsidized housing and prevention programs.
+
+
+## OVERALL STATISTICS AND CHANGES IN POPULATION (Portland / Multnomah County)
+
+### PATTERN: Homeless population size and growth
+- City: Portland (Multnomah County)
+- Topic: population_trend
+- Content: In early 2024, the county estimated its homeless population at around 11,400 people. By early 2025, that estimate had increased substantially, indicating a sharp year‑over‑year rise in homelessness.
+
+### PATTERN: Shelter capacity and utilization
+- City: Portland (Multnomah County)
+- Topic: shelter_capacity
+- Content: Multnomah County has more shelter beds than ever before, but they are still nearly full most nights, with the large majority of approximately 2,500 beds occupied on a typical night.
+
+### PATTERN: Flow into and out of homelessness
+- City: Portland (Multnomah County)
+- Topic: inflow_vs_outflow
+- Content: People are entering homelessness in Multnomah County at a higher rate than they are exiting. Many more people are newly identified as homeless than are recorded as moving into stable housing in a given year.
+
+### PATTERN: Publicly funded housing and prevention
+- City: Portland (Multnomah County)
+- Topic: housing_subsidies
+- Content: City and county tax dollars support housing for thousands of people who were previously homeless or at risk of homelessness, and many more receive rent subsidies or permanent housing assistance. This funding helps prevent homelessness but does not fully offset the broader housing shortage.
+
+### PATTERN: Affordable housing waitlists and income levels
+- City: Portland (Multnomah County)
+- Topic: affordable_housing_waitlist
+- Content: Waitlists for public and subsidized housing in Portland are long, with many applicants categorized as extremely low income. A substantial portion of those on waitlists either are currently homeless or have very unstable housing, meaning long waits can keep people in precarious or street situations for years.
+
+### PATTERN: Vehicle-based homelessness
+- City: Portland (Multnomah County)
+- Topic: vehicle_homelessness
+- Content: A notable portion of unsheltered people in the county live in vehicles such as cars, vans, or RVs. Many of them were priced out of rental housing or evicted and turned to living in vehicles as a last step before unsheltered tent camping.
+
+
+## CONTRIBUTING FACTORS TO HOMELESSNESS IN PORTLAND
+
+### FACTOR: Affordable housing shortage
+- Type: structural_factor
+- Content: Portland has a major shortage of affordable housing. Demand is high while the supply of low‑cost units is limited, and long waitlists for subsidized units keep many people in unstable or homeless situations.
+
+### FACTOR: Rising rents and cost of living
+- Type: structural_factor
+- Content: Rents and basic living costs have been increasing faster than many residents’ incomes, leading to rent burden, evictions, and people being priced out of their homes.
+
+### FACTOR: Evictions and housing instability
+- Type: pathway_to_homelessness
+- Content: Many people enter homelessness after a period of housing instability that includes late rent payments, informal arrangements such as couch‑surfing, and eventual eviction. Losing a rental makes it much harder to secure another unit, especially with poor credit or an eviction record.
+
+### FACTOR: Limited addiction and behavioral health resources
+- Type: service_gap
+- Content: There are not enough addiction treatment and behavioral health services to meet need. People with untreated mental health conditions or substance use disorders are at greater risk of homelessness and may struggle more to exit homelessness.
+
+### NOTE: Limits of homelessness services department
+- Type: systems_context
+- Content: Some of the main drivers of homelessness in Portland—such as the housing market, inflation, and labor conditions—are largely outside the control of the homeless services department, even though that department responds to their impacts.
+
+# CITY GOVERNMENT POLICIES AND PROGRAMS (PORTLAND)
+
+## POLICY: Mayor Wilson’s shelter expansion plan
+- Type: shelter_policy
+- Content: The mayor has proposed a large shelter expansion intended to provide enough beds for a majority of unsheltered people in the region. The plan includes a limit on length of stay (around three months) and aims to move people quickly through shelters.
+- IMPACT: People who cannot secure housing within the time limit may cycle back into homelessness, especially when there is no matching increase in permanent housing options.
+
+## CRITIQUE: Limits of short shelter stays
+- Type: barrier_to_housing
+- Content: Local providers and experts warn that strict stay limits do not account for the shortage of permanent housing. Even highly motivated guests who meet with case managers and seek work may struggle to find housing within the time allowed, leading to returns to homelessness.
+
+## PROGRAM HUB: Portland Solutions
+- Type: program_hub
+- Content: Portland Solutions is a centralized city initiative launched to coordinate key homelessness‑related functions, including outreach, shelter operations, impact reduction in public spaces, and livability efforts. It combines several teams into a single structure to improve coordination and continuity.
+
+### RESOURCE GROUP: City Shelter Services
+- Type: resource_team
+- Population: people moving from unsheltered life toward stability
+- Content: City Shelter Services manages alternative shelters, overnight shelters, and day centers. The team provides access to case management, mental and behavioral health support, and connections to housing resources.
+
+### RESOURCE GROUP: Street Services Coordination Center (SSCC)
+- Type: street_outreach
+- Population: unsheltered individuals
+- Content: The SSCC coordinates outreach to people living outside, offering shelter referrals, transportation, and other resources.
+
+### RESOURCE GROUP: Impact Reduction Program
+- Type: impact_reduction
+- Population: unsheltered people and surrounding communities
+- Content: This program focuses on reducing the immediate impacts of unsheltered homelessness through trash removal, hygiene access, resource referrals, job opportunities, and the removal of campsites that pose high health and safety risks.
+
+### RESOURCE GROUP: Public Environment Management Office (PEMO)
+- Type: public_space_management
+- Content: PEMO coordinates city resources to respond quickly to livability issues in public spaces, such as encampments and environmental damage.
+
+## POLICY: Camping restrictions
+- Type: camping_policy
+- Content: Portland’s camping rules restrict where and how people can camp. People are prohibited from blocking sidewalks or private property, building structures, using fires or gas heaters at camps, damaging infrastructure or the environment, or storing belongings far outside their tents. Some areas are explicitly marked “no trespassing.”
+- IMPACT: These rules can push unsheltered people to move frequently and may increase interactions with law enforcement or city crews, which can disrupt people’s ability to keep belongings, documents, or stability.
+
+# CITY-SPECIFIC RESOURCES (PORTLAND)
+
+## RESOURCE TYPE: Alternative shelters and village-style pods
+
+### RESOURCE: Clinton Triangle (1490 SE Gideon St.)
+- Type: alternative_shelter_village
+- Population: adults 18+ (referral only)
+- Access: referrals from outreach workers; no waitlist
+- Features:
+  - Tiny home units arranged in small clusters
+  - Pets allowed; couples can stay together; no outside guests
+  - No set time limit on stay, though intended as transitional housing
+  - ADA-accessible restrooms and showers
+  - At least one meal per day, laundry, storage, electricity, Wi‑Fi
+  - Nearby public transit
+  - Case management and service planning to identify barriers to housing and connect guests with medical and other resources
+- NOTE: Designed to offer more stability and privacy than large congregate shelters.
+
+### RESOURCE: Menlo Park Safe Rest Village (12305 SE Ash St.)
+- Type: alternative_shelter_village
+- Population: adults 18+ (referral only)
+- Access: referrals from outreach workers; no waitlist
+- Features:
+  - Tiny homes organized in pods
+  - Pets allowed; couples can stay together; no outside guests
+  - Intended as transitional; no formal time limit
+  - Day services to connect people with healthcare, mental health support, employment support, and other resources
+
+  ### RESOURCE: Naito Village
+- Type: alternative_shelter_village
+- Population: LGBTQIA2S+ adults
+- Access: referral-based
+- Features:
+  - Community built around queer and trans residents, emphasizing safety and mutual support
+  - Tiny home units with wrap-around services (meals, hygiene, laundry, storage, Wi‑Fi, transit access)
+  - Service planning to identify barriers to housing and connect residents to medical and social resources
+- NOTE: Provides an affirming environment for LGBTQIA2S+ people who may not feel safe or welcome in other shelters.
+
+### RESOURCE: Weidler Village
+- Type: alternative_shelter_village
+- Population: primarily Black, Indigenous, and people of color (BIPOC)
+- Access: referral-based
+- Features:
+  - Culturally specific environment where most participants and staff identify as BIPOC
+  - Tiny homes with meals, hygiene, laundry, storage, Wi‑Fi, transit access
+  - Service planning and connections to medical and housing resources
+- NOTE: Designed to address racial inequities and provide a culturally responsive shelter environment.
+
+### RESOURCE: N Portland Road (10505 N Portland Road)
+- Type: alternative_shelter_village_with_RV_parking
+- Population: adults 18+; includes people living in vehicles
+- Access: referrals from outreach workers; no waitlist
+- Features:
+  - Tiny home units plus designated RV parking spaces
+  - Pets allowed; couples can stay together; no outside guests
+  - Transitional housing with no strict time limit
+  - Meals, ADA-accessible showers and restrooms, laundry, storage, electricity, Wi‑Fi, transit access
+  - Case management and service planning
+- NOTE: RV parking is especially important in Portland, where a significant share of unsheltered residents live in vehicles after being priced out of housing. The site allows them to remain in their vehicle while accessing services and work.
+
+## RESOURCE TYPE: Congregate and emergency shelters
+
+### RESOURCE: Burnside Shelter (SAFES) – 30 SW 2nd Ave
+- Type: emergency_overnight_shelter
+- Population: women-identifying adults (18+)
+- Access: first-come, first-served; nightly check-in around 7pm
+- Features:
+  - Emergency overnight beds only; guests must leave during the day
+  - Pets allowed
+  - No ID or sobriety requirement, but substances are not allowed on the property
+- Operator: Salvation Army (faith-based Christian organization)
+
+### RESOURCE: Moore Street Shelter
+- Type: emergency_overnight_shelter
+- Population: mixed-gender adults (18+)
+- Access: first-come, first-served; nightly check-in around 7pm
+- Features:
+  - Emergency overnight beds only; guests must leave during the day
+  - Pets allowed
+  - No ID or sobriety requirement, but substances are not allowed on the property
+- Operator: Salvation Army (faith-based Christian organization)

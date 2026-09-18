@@ -1,0 +1,12 @@
+# Environment
+~$*
+**.env
+**.env.local
+**.env.production
+backend/.env
+**.env.*
+!**.env.example
+
+# Database
+backend-cloudflare/personas_backup.sql
+*backend-cloudflare/personas_backup.sql
