@@ -437,6 +437,31 @@ h1 {
   min-height: 360px;
 }
 
+.home-submissions-figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.home-submissions-photo {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-image-credit {
+  margin-top: 8px;
+  font-size: 10pt;
+  line-height: 1.4;
+}
+
+.home-image-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .home-submissions-copy h3,
 .home-submission-details h3 {
   font-size: clamp(1.3rem, 2vw, 1.8rem);
@@ -580,8 +605,10 @@ h1 {
 }
 
 .home-component-image {
+  display: block;
+  object-fit: cover;
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 3;
 }
 
 .home-component-card h4 {
@@ -603,6 +630,27 @@ h1 {
 }
 
 .home-components-list p {
+  margin: 0;
+}
+
+.home-submission-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  color: var(--primary-purple);
+}
+
+.home-guideline-icons {
+  display: inline-flex;
+  gap: 4px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.home-guideline-icons .home-submission-icon {
+  width: 28px;
+  height: 28px;
   margin: 0;
 }
 
@@ -686,6 +734,10 @@ h1 {
     min-height: 400px;
   }
 
+  .home-submissions-photo {
+    height: 400px;
+  }
+
   .home-submissions {
     padding-left: 0;
     padding-right: 0;
@@ -753,6 +805,10 @@ h1 {
 
   .home-submissions-image {
     min-height: 260px;
+  }
+
+  .home-submissions-photo {
+    height: 260px;
   }
 
   .home-submission-details {

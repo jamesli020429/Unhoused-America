@@ -1,11 +1,36 @@
 import { useEffect, useState } from 'react';
 import { useSEO } from '../hooks/useSEO';
 import ameriQuestsLogo from '../AmeriQuests.jpg';
+import submissionsImage from '../assets/home/call for submissions.webp';
+import timelineImage from '../assets/home/timeline.jpg';
+import mapImage from '../assets/home/map.png';
 
 const HERO_SCROLL_DISTANCE = 180;
 
 function ImagePlaceholder({ className, label }) {
     return <div className={`home-image-placeholder ${className}`} role="img" aria-label={label} />;
+}
+
+function SubmissionIcon({ type }) {
+    return (
+        <svg className="home-submission-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+            <circle cx="32" cy="32" r="29" fill="var(--highlight-yellow)" stroke="none" />
+            <g transform="translate(32 32) scale(0.8) translate(-32 -32)">
+            {type === 'book' && <>
+                <path d="M32 19c-6-4-13-5-21-3v29c8-2 15-1 21 3 6-4 13-5 21-3V16c-8-2-15-1-21 3Z" />
+                <path d="M32 19v29M17 24c3 0 6 1 9 2M17 31c3 0 6 1 9 2M38 26c3-1 6-2 9-2M38 33c3-1 6-2 9-2" />
+            </>}
+            {type === 'commentary' && <>
+                <path d="M17 14h30a6 6 0 0 1 6 6v19a6 6 0 0 1-6 6H29L17 53v-8a6 6 0 0 1-6-6V20a6 6 0 0 1 6-6Z" />
+                <path d="M21 25h22M21 33h16" />
+            </>}
+            {type === 'creative' && <>
+                <path d="m25 35 22-22a3 3 0 0 1 4 0l3 3a3 3 0 0 1 0 4L32 42l-11 4 4-11Z" />
+                <path d="m43 17 7 7M25 35l7 7M14 39c-9 4-7 13 3 13 9 0 14-6 23-4 4 1 7 3 10 6" />
+            </>}
+            </g>
+        </svg>
+    );
 }
 
 function Home() {
@@ -95,7 +120,12 @@ function Home() {
                 <section className="home-submissions" aria-labelledby="submissions-title">
                     <h2 id="submissions-title">Call for Submissions</h2>
                     <div className="home-submissions-grid">
-                        <ImagePlaceholder className="home-submissions-image" label="Call for submissions image placeholder" />
+                        <figure className="home-submissions-figure">
+                            <img className="home-submissions-photo" src={submissionsImage} alt="Tents and belongings beside a Sidewalk Closed sign at a Minneapolis encampment" />
+                            <figcaption className="home-image-credit">
+                                Source: <a href="https://www.cbsnews.com/minnesota/news/minneapolis-homeless-encampment-sabri-response/" target="_blank" rel="noopener noreferrer">CBS Minnesota / WCCO</a>
+                            </figcaption>
+                        </figure>
                         <div className="home-submissions-copy">
                             <h3>Overview</h3>
                             <p>
@@ -126,12 +156,12 @@ function Home() {
                                     <p>Explore AI-generated composite profiles that illuminate the diverse, everyday experiences of people navigating homelessness.</p>
                                 </a>
                                 <a className="home-component-card" href="/map">
-                                    <ImagePlaceholder className="home-component-image" label="Map image placeholder" />
+                                    <img className="home-component-image" src={mapImage} alt="Purple-shaded map of the United States with location markers" loading="lazy" />
                                     <h4>Interactive Geospatial Map</h4>
                                     <p>Using HUD Continuum of Care regions and 2024 point-in-time county data, <i>Unhoused America</i> maps homelessness across the US to identify regional “hot spots” and demographic disparities.</p>
                                 </a>
                                 <a className="home-component-card" href="/timeline">
-                                    <ImagePlaceholder className="home-component-image" label="Timeline image placeholder" />
+                                    <img className="home-component-image" src={timelineImage} alt="Archival photograph of makeshift homes with an industrial city skyline behind them" loading="lazy" />
                                     <h4>Timeline</h4>
                                     <p>Situate contemporary homelessness within its broad historical, legal, and policy context, deepening understanding of its causes and consequences.</p>
                                 </a>
@@ -162,6 +192,7 @@ function Home() {
                             <h3>Submission Types</h3>
                             <div className="home-components-list">
                                 <p>
+                                    <SubmissionIcon type="book" />
                                     <strong>Text Submissions for Peer-Review</strong><br />
                                     Text submissions consisting of a 2,000 to 5,000-word manuscript with accompanying
                                     figures or images (visuals are encouraged) that directly engage perceptions of
@@ -170,6 +201,7 @@ function Home() {
                                     will undergo a double peer review process.
                                 </p>
                                 <p>
+                                    <SubmissionIcon type="commentary" />
                                     <strong>Text Submissions as Commentary</strong><br />
                                     Text submissions consisting of a 1,000 to 2,500-word manuscript with accompanying
                                     figures or images (visuals are encouraged) that directly engage perceptions of
@@ -178,6 +210,7 @@ function Home() {
                                     will not undergo a peer review process.
                                 </p>
                                 <p>
+                                    <SubmissionIcon type="creative" />
                                     <strong>Creative Submissions</strong><br />
                                     Creative works can include media submissions (project portfolios: visual art,
                                     performance art, design, architecture, culinary arts, among other media practices)
@@ -204,7 +237,12 @@ function Home() {
 
                             <div className="home-guidelines-columns">
                                 <section>
-                                    <h4>Text Submission Guidelines</h4>
+                                    <h4>Text Submission Guidelines{' '}
+                                        <span className="home-guideline-icons">
+                                            <SubmissionIcon type="book" />
+                                            <SubmissionIcon type="commentary" />
+                                        </span>
+                                    </h4>
                                 <p>All text documents should be submitted as Microsoft Office Document (.docx) files via email to Dana McKinney White (<a href="mailto:mckinneywhite@gsd.harvard.edu">mckinneywhite@gsd.harvard.edu</a>), cc&apos;ing Robert Barsky (<a href="mailto:robert.barsky@vanderbilt.edu">robert.barsky@vanderbilt.edu</a>). Figures or images should be attached as individual, high-resolution JPG or TIFF files. When submitting, please specify whether the piece is a text submission for peer review or as a commentary.</p>
                                 <p>All sources should be properly cited within the text using a consistent style of language (MLA, Chicago, APA, ABA, etc.). Please include a bibliography with your manuscript, unless you use endnotes or footnotes, in which case a separate list of works cited is not needed. Image captions should be included as a separate Microsoft Office Document (.docx) file.</p>
                                 <h5>Copyright Permissions</h5>
@@ -219,7 +257,11 @@ function Home() {
                                 </section>
 
                                 <section>
-                                    <h4>Creative Submission Guidelines</h4>
+                                    <h4>Creative Submission Guidelines{' '}
+                                        <span className="home-guideline-icons">
+                                            <SubmissionIcon type="creative" />
+                                        </span>
+                                    </h4>
                                 <p>All images should be submitted as individual, high-resolution JPEG, PNG, or GIF (animated only) files via email to Dana McKinney White (<a href="mailto:mckinneywhite@gsd.harvard.edu">mckinneywhite@gsd.harvard.edu</a>), cc&apos;ing Robert Barsky (<a href="mailto:robert.barsky@vanderbilt.edu">robert.barsky@vanderbilt.edu</a>). Videos should be submitted in the MP4 format. Audio files should be in the MP3 format. Ensure that the shortest edge of the submitted media is no less than 2048 pixels. If you want to submit in a different creative format, please contact us with any questions about the submission requirements. When submitting, please specify that the piece is a creative submission.</p>
                                 <p>All accompanying text documents should be attached as Microsoft Office documents (.docx) files.</p>
                                 <h5>Captioning</h5>
