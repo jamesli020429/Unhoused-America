@@ -2,19 +2,49 @@ import { useEffect, useState } from 'react';
 import { useSEO } from '../hooks/useSEO';
 import ameriQuestsLogo from '../AmeriQuests.jpg';
 
+const HERO_SCROLL_DISTANCE = 180;
+
 function ImagePlaceholder({ className, label }) {
     return <div className={`home-image-placeholder ${className}`} role="img" aria-label={label} />;
 }
 
 function Home() {
     useSEO();
-    const [isCondensed, setIsCondensed] = useState(false);
+    const [heroProgress, setHeroProgress] = useState(0);
 
     useEffect(() => {
-        const updateHero = () => setIsCondensed(window.scrollY > 88);
+        let frame;
+        let settleTimer;
+        let previousScroll = window.scrollY;
+        let scrollingDown = true;
+        const updateHero = () => {
+            const scrollY = Math.max(0, window.scrollY);
+            if (scrollY !== previousScroll) {
+                scrollingDown = scrollY > previousScroll;
+            }
+            previousScroll = scrollY;
+            cancelAnimationFrame(frame);
+            frame = requestAnimationFrame(() => {
+                setHeroProgress(Math.min(1, Math.max(0, window.scrollY / HERO_SCROLL_DISTANCE)));
+            });
+            clearTimeout(settleTimer);
+            // Complete the transition after scrolling pauses; leave the rest of the page free to scroll.
+            if (scrollY > 0 && scrollY < HERO_SCROLL_DISTANCE) {
+                settleTimer = setTimeout(() => {
+                    window.scrollTo({
+                        top: scrollingDown ? HERO_SCROLL_DISTANCE : 0,
+                        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+                    });
+                }, 140);
+            }
+        };
         updateHero();
         window.addEventListener('scroll', updateHero, { passive: true });
-        return () => window.removeEventListener('scroll', updateHero);
+        return () => {
+            window.removeEventListener('scroll', updateHero);
+            cancelAnimationFrame(frame);
+            clearTimeout(settleTimer);
+        };
     }, []);
 
     const returnToTop = () => {
@@ -29,8 +59,8 @@ function Home() {
     };
 
     return (
-        <main className="main-content home">
-            <section className={`home-hero ${isCondensed ? 'is-condensed' : ''}`} aria-labelledby="home-title">
+        <main className="main-content home" style={{ '--hero-progress': heroProgress, '--hero-scroll-distance': `${HERO_SCROLL_DISTANCE}px` }}>
+            <section className="home-hero" aria-labelledby="home-title">
                 <div className="home-hero-disc" aria-hidden="true" />
                 <div className="home-return-to-top" aria-hidden="true" onClick={returnToTop} />
                 <a className="home-publication" href="https://www.ameriquests.org" target="_blank" rel="noopener noreferrer">
@@ -59,23 +89,7 @@ function Home() {
                 </p>
             </section>
 
-            <div className="home-section-band">
-                <h2 className="home-band-heading">About the Project</h2>
-                <section className="home-feature" aria-label="About Unhoused America">
-                    <ImagePlaceholder className="home-feature-image" label="Featured project image placeholder" />
-
-                    <div className="home-feature-copy">
-                        <p>
-                            The project demonstrates diverse experiences of homelessness, multi-faceted,
-                            varying by region, demographic characteristics, and lived experience. Our approach
-                            leverages geospatial mapping, a historical timeline, and AI-generated,
-                            trauma-responsive storytelling to promote more nuanced, data-rich, and empathetic
-                            understandings of unhoused populations while offering planners, policymakers,
-                            social service providers, and designers greater legibility of unhoused community needs.
-                        </p>
-                    </div>
-                </section>
-            </div>
+            <span className="home-hero-scroll-space" aria-hidden="true" />
 
             <div className="home-section-band">
                 <section className="home-submissions" aria-labelledby="submissions-title">

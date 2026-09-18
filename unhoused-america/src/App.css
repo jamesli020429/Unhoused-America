@@ -167,11 +167,16 @@ h1 {
 
 /* home page */
 .home {
+  --home-nav-height: 60px;
+  --hero-expanded-height: 344px;
+  --hero-compact-height: 108px;
+  --hero-height: calc(var(--hero-expanded-height) - (var(--hero-expanded-height) - var(--hero-compact-height)) * var(--hero-progress, 0));
+  overflow-anchor: none;
   --home-inline-padding: 5vw;
   box-sizing: border-box;
   min-height: calc(100vh - 60px);
   max-width: none;
-  padding: 44px var(--home-inline-padding) 72px;
+  padding: 0 var(--home-inline-padding) 72px;
   margin: 60px 0 0;
   width: 100%;
   background: linear-gradient(
@@ -187,21 +192,32 @@ h1 {
 
 .home-hero {
   box-sizing: border-box;
-  position: relative;
+  position: sticky;
+  top: var(--home-nav-height);
+  z-index: 20;
+  height: var(--hero-height);
+  margin: 0 calc(0px - var(--home-inline-padding));
+  padding: 0 var(--home-inline-padding);
+  background: linear-gradient(180deg, #f1cb16 0%, #f2d03f 45%, #eadb9d 100%);
   display: flex;
-  min-height: 300px;
+  min-height: 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   isolation: isolate;
-  transition: min-height 420ms ease, background-color 420ms ease;
+}
+
+/* Reserve the scroll used to shrink the hero before scrolling the content. */
+.home-hero-scroll-space {
+  display: block;
+  height: calc(var(--hero-scroll-distance) * var(--hero-progress));
 }
 
 .home-hero-disc {
   position: absolute;
   z-index: -1;
-  width: min(42vw, 290px);
+  width: calc(min(42vw, 290px) * (1 - var(--hero-progress)) + min(11vw, 72px) * var(--hero-progress));
   aspect-ratio: 1;
   border-radius: 50%;
   background: var(--highlight-yellow);
@@ -211,7 +227,7 @@ h1 {
 .home-return-to-top {
   position: absolute;
   z-index: 0;
-  width: min(42vw, 290px);
+  width: calc(min(42vw, 290px) * (1 - var(--hero-progress)) + min(11vw, 72px) * var(--hero-progress));
   aspect-ratio: 1;
   cursor: pointer;
 }
@@ -222,7 +238,7 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  max-width: min(34vw, 230px);
+  width: calc(min(34vw, 230px) * (1 - var(--hero-progress)) + min(18vw, 118px) * var(--hero-progress));
   padding: 0;
   color: var(--primary-purple);
   text-decoration: none;
@@ -236,7 +252,7 @@ h1 {
 
 .home h1 {
   margin: 0.05em 0 0.16em;
-  font-size: clamp(3.2rem, 7vw, 5.75rem);
+  font-size: calc(clamp(3.2rem, 7vw, 5.75rem) * (1 - var(--hero-progress)) + clamp(1.1rem, 1.65vw, 1.55rem) * var(--hero-progress));
   line-height: 0.78;
   letter-spacing: -0.055em;
 }
@@ -253,50 +269,13 @@ h1 {
 }
 
 .home-tagline {
+  max-height: calc(100px * (1 - var(--hero-progress)));
+  opacity: max(0, calc(1 - var(--hero-progress) * 2));
+  overflow: hidden;
   max-width: 590px;
   margin: 0;
   font-size: clamp(0.85rem, 1.25vw, 1rem);
   line-height: 1.25;
-  transition: opacity 220ms ease, transform 220ms ease, max-height 300ms ease, margin 300ms ease;
-}
-
-.home-hero.is-condensed {
-  position: sticky;
-  top: 60px;
-  z-index: 20;
-  min-height: 108px;
-  margin: -44px calc(0px - var(--home-inline-padding)) 0;
-  padding: 28px var(--home-inline-padding);
-  background: linear-gradient(
-    180deg,
-    #f1cb16 0%,
-    #f2d03f 45%,
-    #eadb9d 100%
-  );
-}
-
-.home-hero.is-condensed .home-hero-disc {
-  width: min(11vw, 72px);
-}
-
-.home-hero.is-condensed .home-return-to-top {
-  width: min(11vw, 72px);
-}
-
-.home-hero.is-condensed .home-publication {
-  max-width: min(18vw, 118px);
-}
-
-.home-hero.is-condensed h1 {
-  font-size: clamp(1.1rem, 1.65vw, 1.55rem);
-}
-
-.home-hero.is-condensed .home-tagline {
-  max-height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  transform: translateY(-8px);
 }
 
 .home-feature {
@@ -342,10 +321,6 @@ h1 {
   margin: 0 auto;
   padding: 28px 0 0;
   font-size: clamp(2rem, 3vw, 3.05rem);
-}
-
-.home-section-band:first-of-type {
-  margin-top: 48px;
 }
 
 .home-image-placeholder {
@@ -677,9 +652,12 @@ h1 {
 
   /* home page */
   .home {
+    --home-nav-height: 0px;
+    --hero-expanded-height: 404px;
+    --hero-compact-height: 120px;
     --home-inline-padding: clamp(48px, 8vw, 128px);
     min-height: 100vh;
-    padding: 64px var(--home-inline-padding) 96px;
+    padding: 0 var(--home-inline-padding) 96px;
     margin: 0 0 0 60px;
     z-index: 3;
     position: relative;
@@ -687,14 +665,7 @@ h1 {
   }
 
   .home-hero {
-    min-height: 340px;
-  }
-
-  .home-hero.is-condensed {
-    top: 0;
-    min-height: 120px;
-    margin: -64px calc(0px - var(--home-inline-padding)) 0;
-    padding: 28px var(--home-inline-padding);
+    min-height: 0;
   }
 
   .home-feature {
@@ -737,27 +708,22 @@ h1 {
 
 @media screen and (max-width: 640px) {
   .home {
+    --hero-expanded-height: 296px;
+    --hero-compact-height: 92px;
     --home-inline-padding: 24px;
-    padding: 36px 24px 56px;
+    padding: 0 24px 56px;
   }
 
   .home-hero {
-    min-height: 260px;
+    min-height: 0;
   }
 
   .home-hero-disc {
-    width: 245px;
+    width: calc(245px * (1 - var(--hero-progress)) + min(11vw, 72px) * var(--hero-progress));
   }
 
   .home-return-to-top {
-    width: 245px;
-  }
-
-  .home-hero.is-condensed {
-    top: 60px;
-    min-height: 92px;
-    margin: -36px calc(0px - var(--home-inline-padding)) 0;
-    padding: 18px var(--home-inline-padding);
+    width: calc(245px * (1 - var(--hero-progress)) + min(11vw, 72px) * var(--hero-progress));
   }
 
   .home-feature {
