@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homelessness Rate in the United States</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Quattrocento+Sans:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.34/esri/themes/dark/main.css">
+  <style>
+    html, body, #map { width: 100%; height: 100%; margin: 0; background: #39305f; }
+    #status { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 16px; background: #39305f; color: #f0e5db; font: 16px/1.4 sans-serif; text-align: center; }
+    #status a { color: #e8bf1a; }
+    .rate-legend { padding: 12px; width: 150px; background: rgba(33, 34, 87, .94); color: #fff; font: 12px/1.35 sans-serif; border: 1px solid #ffffff40; border-radius: 4px; }
+    .rate-legend h2 { font-size: 13px; margin: 0 0 4px; }
+    .rate-legend p { margin: 0 0 8px; font-size: 11px; }
+    .rate-legend-row { display: flex; align-items: center; gap: 8px; margin-top: 5px; }
+    .rate-legend-swatch { width: 12px; height: 12px; flex: 0 0 12px; border-radius: 2px; }
+    .region-details { box-sizing: border-box; position: absolute; z-index: 5; top: 20px; left: 64px; width: min(310px, calc(100% - 84px)); max-height: calc(100% - 50px); overflow-y: auto; padding: 22px; background: rgba(21, 11, 63, .96); color: #ede3dd; border: 1px solid #6f5a98; border-radius: 8px; box-shadow: 0 12px 32px #05003b66; font: 14px/1.4 'Quattrocento Sans', sans-serif; }
+    .region-details[hidden] { display: none; }
+    .region-details h2 { font: 700 21px/1.2 'Averia Serif Libre', serif; margin: 0 12px 8px 0; }
+    .region-details .eyebrow { font-size: 10px; text-transform: uppercase; letter-spacing: .12em; margin: 0 0 8px; }
+    .region-details .region-state { font-size: 12px; color: #ccc5e1; margin: 0 0 16px; }
+    .region-details .metric { display: grid; grid-template-columns: 65px 1fr; gap: 12px; align-items: baseline; margin: 14px 0; }
+    .region-details strong { color: #e8bf1a; font-size: 22px; }
+    .region-details .metric span { font-size: 13px; }
+    #close-region { position: absolute; top: 8px; right: 10px; border: 0; background: transparent; color: #fff; font-size: 26px; cursor: pointer; }
+    #close-region:focus-visible { outline: 2px solid #e8bf1a; outline-offset: 2px; }
+    @media (max-width: 600px) { body.region-selected .rate-legend { display: none; } }
+    @media (max-width: 480px) { .rate-legend { width: 126px; padding: 8px; font-size: 11px; } }
+  </style>
+</head>
+<body>
+  <div id="map" aria-label="Interactive map of homelessness rates"></div>
+  <div id="status" role="status">Loading map…</div>
+  <section id="region-details" class="region-details" aria-labelledby="region-name" aria-live="polite" hidden>
+    <button id="close-region" type="button" aria-label="Close region details">×</button>
+    <p class="eyebrow">Continuum of Care</p>
+    <h2 id="region-name"></h2>
+    <p id="region-state" class="region-state"></p>
+    <p class="metric"><strong id="region-rate"></strong><span>people experiencing homelessness per 10,000 residents</span></p>
+    <p class="metric"><strong id="region-total"></strong><span>total people experiencing homelessness</span></p>
+  </section>
+  <script src="https://js.arcgis.com/4.34/"></script>
+  <script>
+    const statusMessage = document.getElementById('status');
+    function showError() {
+      statusMessage.hidden = false;
+      statusMessage.replaceChildren(document.createTextNode('The map could not load. '));
+      const link = document.createElement('a');
+      link.href = 'https://www.arcgis.com/apps/mapviewer/index.html?webmap=8de672bf657744e4b30558249718d8d2';
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = 'Open it in ArcGIS';
+      statusMessage.append(link);
+    }
+    if (typeof require !== 'function') {
+      showError();
+    } else {
+      require([
+        'esri/WebMap', 'esri/views/MapView', 'esri/widgets/Home',
+        'esri/widgets/Fullscreen', 'esri/layers/FeatureLayer'
+      ], function (WebMap, MapView, Home, Fullscreen, FeatureLayer) {
+        // Preserve the original map's saved layer colors and purple vector basemap.
+        const map = new WebMap({ portalItem: { id: '8de672bf657744e4b30558249718d8d2' } });
+        const view = new MapView({
+          container: 'map', map,
+          extent: {
+            xmin: -16175584.786, ymin: 1668417.66,
+            xmax: -5891899.204, ymax: 7448653.889,
+            spatialReference: { wkid: 3857 }
+          },
+          navigation: { mouseWheelZoomEnabled: false },
+          popupEnabled: false,
+          highlightOptions: { color: '#ede3dd', fillOpacity: 0.08, haloOpacity: 0.9 }
+        });
+        map.load().then(function () {
+          // Match the two visible groups in the archived StoryMap.
+          const visibleGroups = new Set([
+            '31dc57f3e5a84c9984d6820e2fe80fb2',
+            '76f8802712ac4b5999dcaa88e0fd8cbe'
+          ]);
+          map.layers.forEach(function (layer) { layer.visible = visibleGroups.has(layer.id); });
+          return view.when();
+        }).then(function () {
+          statusMessage.hidden = true;
+          view.ui.add(new Home({ view }), 'top-left');
+          view.ui.add(new Fullscreen({ view }), 'top-right');
+          // Build an always-visible, compact key from the displayed layer itself.
+          const rateLayer = map.allLayers.find(layer => layer.url && (layer.layerId === 8 || /\/8\/?$/.test(layer.url)));
+          if (rateLayer) {
+            const details = document.getElementById('region-details');
+            let highlight, selectionRequest = 0;
+            const format = (value, digits = 0) => value == null || !Number.isFinite(Number(value))
+              ? 'Not available' : Number(value).toLocaleString('en-US', { maximumFractionDigits: digits });
+            function closeRegion() {
+              selectionRequest += 1;
+              details.hidden = true;
+              statusMessage.hidden = true;
+              document.body.classList.remove('region-selected');
+              if (highlight) { highlight.remove(); highlight = null; }
+            }
+            document.getElementById('close-region').addEventListener('click', closeRegion);
+            document.addEventListener('keydown', event => { if (event.key === 'Escape') closeRegion(); });
+            view.on('click', async function (event) {
+              closeRegion();
+              const current = selectionRequest;
+              statusMessage.textContent = 'Loading region details…';
+              statusMessage.hidden = false;
+              try {
+                const result = await rateLayer.queryFeatures({
+                  geometry: event.mapPoint, spatialRelationship: 'intersects',
+                  outFields: ['FID', 'COCNAME', 'STATE_NAME', 'TOT_PEH', 'PEHRATE10K'],
+                  returnGeometry: true
+                });
+                if (current !== selectionRequest) return;
+                const feature = result.features[0];
+                if (!feature) {
+                  statusMessage.textContent = 'No reported region here. Select another area.';
+                  return;
+                }
+                const layerView = await view.whenLayerView(rateLayer);
+                if (current !== selectionRequest) return;
+                const data = feature.attributes;
+                document.getElementById('region-name').textContent = data.COCNAME || 'Unnamed region';
+                document.getElementById('region-state').textContent = data.STATE_NAME || '';
+                document.getElementById('region-rate').textContent = format(data.PEHRATE10K, 1);
+                document.getElementById('region-total').textContent = format(data.TOT_PEH);
+                highlight = layerView.highlight(feature);
+                statusMessage.hidden = true;
+                details.hidden = false;
+                document.body.classList.add('region-selected');
+              } catch (error) {
+                if (current === selectionRequest) statusMessage.textContent = 'Region details could not load. Please try again.';
+              }
+            });
+            // Read the published simple-fill symbols; the WebMap may convert
+            // them to CIM symbols whose generic color property is black.
+            const legendSource = new FeatureLayer({ url: 'https://services1.arcgis.com/qN3V93cYGMKQCOxL/arcgis/rest/services/Homelessness_Rate_WFL1/FeatureServer/8' });
+            legendSource.load().then(function () {
+              const legend = document.createElement('section');
+              legend.className = 'rate-legend';
+              legend.setAttribute('aria-label', 'Homelessness rate legend');
+              const title = document.createElement('h2'); title.textContent = 'Homelessness rate';
+              const unit = document.createElement('p'); unit.textContent = 'Per 10,000 residents';
+              legend.append(title, unit);
+              legendSource.renderer.classBreakInfos.forEach(function (info) {
+                const row = document.createElement('div'); row.className = 'rate-legend-row';
+                const swatch = document.createElement('span'); swatch.className = 'rate-legend-swatch';
+                swatch.style.background = info.symbol.color.toCss(true);
+                swatch.setAttribute('aria-hidden', 'true');
+                row.append(swatch, document.createTextNode(info.label)); legend.append(row);
+              });
+              view.ui.add(legend, 'top-right');
+              legendSource.destroy();
+            }).catch(function () { console.warn('The rate legend could not load.'); });
+          }
+        }).catch(showError);
+      }, showError);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Race and Homelessness</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Quattrocento+Sans:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.34/esri/themes/dark/main.css">
+  <link rel="stylesheet" href="race-map.css">
+</head>
+<body>
+  <main class="race-layout">
+    <aside class="race-sidebar">
+      <nav class="map-page-links" aria-label="Map navigation">
+        <a class="back-link" href="/map" target="_parent">← All maps</a>
+        <a class="back-link" id="next-map" href="/map/age" target="_parent">Next map: Age →</a>
+      </nav>
+      <h1 id="map-title">Race and Homelessness</h1>
+      <p id="map-description">Explore the racial composition of people experiencing homelessness across U.S. Continuum of Care regions. Select a region to see its reported counts, or use the legend to explore individual groups.</p>
+      <p class="race-context"><em>As of 2020, the Black population made up 40% of houseless population, despite being only 13% of the U.S. population</em></p>
+      <section aria-labelledby="legend-title">
+        <h2 id="legend-title">Race of Persons Experiencing Homelessness</h2>
+        <p class="small">One dot ≈ 10 people</p>
+        <div id="legend" aria-label="Toggle racial categories"></div>
+        <button class="text-button" id="reset-categories" type="button">Show all groups</button>
+      </section>
+      <p class="small methodology">Dots are distributed within each region, not at individuals’ locations. Counts are not population-adjusted rates. Hiding a group does not change regional totals.</p>
+      <label for="region">Find a Continuum of Care region</label>
+      <select id="region" disabled><option value="">Loading regions…</option></select>
+      <p class="small source">Source: HUD point-in-time data via the project’s <a href="https://www.arcgis.com/home/item.html?id=8de672bf657744e4b30558249718d8d2" target="_blank" rel="noopener noreferrer">ArcGIS map</a>.</p>
+    </aside>
+    <section class="map-stage" aria-label="Interactive map">
+      <div id="map"></div>
+      <div class="map-tools" aria-label="Map controls">
+        <button id="home" title="Reset map extent" aria-label="Reset map extent">⌂</button>
+        <button id="zoom-in" title="Zoom in" aria-label="Zoom in">+</button>
+        <button id="zoom-out" title="Zoom out" aria-label="Zoom out">−</button>
+      </div>
+      <p id="status" role="status">Loading race and homelessness data…</p>
+      <section id="details" class="details" aria-labelledby="region-name" hidden>
+        <button id="close-details" aria-label="Close region details">×</button>
+        <p class="eyebrow">Continuum of Care</p>
+        <h2 id="region-name"></h2>
+        <p id="region-state" class="small"></p>
+        <div class="metrics"><p><strong id="region-rate"></strong><span>people experiencing homelessness per 10,000 residents</span></p><p><strong id="region-total"></strong><span>total people experiencing homelessness</span></p></div>
+        <h3 id="counts-title">Reported counts by race</h3>
+        <dl id="region-counts"></dl>
+      </section>
+    </section>
+  </main>
+  <script src="demographic-map-config.js"></script>
+  <script src="https://js.arcgis.com/4.34/"></script>
+  <script src="race-map.js"></script>
+</body>
+</html>

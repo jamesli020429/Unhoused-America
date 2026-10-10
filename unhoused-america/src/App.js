@@ -15,6 +15,8 @@ import ArticleView from './articles/article-view';
 import ArticlesList from './articles/articles-list';
 
 import Map from './maps/map';
+import ArchivedMap from './maps/map.archive';
+import RaceMap from './maps/race';
 import Timeline from './timeline/timeline';
 
 const TRANSITION_MS = 240;
@@ -70,6 +72,14 @@ function AppRoutesWithTransitions() {
         <Route path="/articles" element={<ArticlesList />} />
 
         <Route path="/map" element={<Map />} />
+        <Route path="/map/archive" element={<ArchivedMap />} />
+        <Route path="/map/race" element={<RaceMap />} />
+        <Route path="/map/age" element={<RaceMap topic="age" />} />
+        <Route path="/map/gender" element={<RaceMap topic="gender" />} />
+        <Route path="/map/veteran" element={<RaceMap topic="veteran" />} />
+        <Route path="/map/rate" element={<RaceMap topic="rate" />} />
+        <Route path="/map/unsheltered" element={<RaceMap topic="unsheltered" />} />
+        <Route path="/map/sheltered" element={<RaceMap topic="sheltered" />} />
         <Route path="/timeline" element={<Timeline />} />
       </Routes>
 

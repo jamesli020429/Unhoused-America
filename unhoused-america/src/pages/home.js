@@ -4,12 +4,9 @@ import ameriQuestsLogo from '../AmeriQuests.jpg';
 import submissionsImage from '../assets/home/call for submissions.webp';
 import timelineImage from '../assets/home/timeline.jpg';
 import mapImage from '../assets/home/map.png';
+import embodiconImage from '../assets/home/embodicon-abstract.png';
 
 const HERO_SCROLL_DISTANCE = 180;
-
-function ImagePlaceholder({ className, label }) {
-    return <div className={`home-image-placeholder ${className}`} role="img" aria-label={label} />;
-}
 
 function SubmissionIcon({ type }) {
     return (
@@ -151,7 +148,7 @@ function Home() {
                             <h3>Core Components</h3>
                             <div className="home-components-list">
                                 <a className="home-component-card" href="/embodicons">
-                                    <ImagePlaceholder className="home-component-image" label="Embodicons image placeholder" />
+                                    <img className="home-component-image" src={embodiconImage} alt="Abstract purple figure with a question mark against a yellow circle" loading="lazy" />
                                     <h4>Embodicons</h4>
                                     <p>Explore AI-generated composite profiles that illuminate the diverse, everyday experiences of people navigating homelessness.</p>
                                 </a>
@@ -224,12 +221,12 @@ function Home() {
                         <article id="submission-guidelines" className="home-guidelines-detail">
                             <h3>Submission Guidelines</h3>
                             <section>
-                                <h4>Editorial Review and Submission Process</h4>
+                                <h4 className="home-guideline-subheading">Editorial Review and Submission Process</h4>
                                 <p>For text submissions (peer review and commentary), please discern upon submission if you intend to for peer review or not. Upon preliminary acceptance, peer-reviewed text submissions will undergo a double peer-review process. Commentary text submissions and creative submissions are not peer reviewed and will be selected at the discretion of the editorial team.</p>
                             </section>
 
                             <section>
-                                <h4>Manuscript Preparation</h4>
+                                <h4 className="home-guideline-subheading">Manuscript Preparation</h4>
                                 <p>As this is an online publication, the range of possible references, hyperlinks, and internal references is as broad as the technology will support. However, expect that all citations are consistent with a singular style of language.</p>
                                 <p>Contributors should send only proofread manuscripts, with correct punctuation, spelling, and citations, and images that are appropriately captioned and cited. All text documents must be written in a 12-point (size) Times New Roman double-spaced font.</p>
                                 <p>If you are sending a manuscript that includes figures or images, please send each as a separate file, NOT embedded within the text document. Each visual item should be numbered, titled, and have its placement indicated within the text. Please see below for specifics on image format requirements.</p>

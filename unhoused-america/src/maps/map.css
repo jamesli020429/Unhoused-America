@@ -1,0 +1,344 @@
+html.map-scroll-snap {
+    /* Only offset the fixed mobile navigation; no gap above snapped sections. */
+    --map-snap-offset: 60px;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: var(--map-snap-offset);
+    background: #212257;
+}
+
+.main-content.map-page {
+    --map-inline-padding: 5vw;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    margin: 60px 0 0;
+    padding: 24px var(--map-inline-padding) 80px;
+    background: #212257;
+    color: #fff;
+}
+
+.map-page-heading {
+    /* Match the homepage's expanded hero height at each breakpoint. */
+    min-height: 344px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    box-sizing: border-box;
+    width: calc(100% + var(--map-inline-padding) + var(--map-inline-padding));
+    margin: -24px calc(0px - var(--map-inline-padding)) 0;
+    padding: 24px var(--map-inline-padding);
+    background: linear-gradient(180deg, #9470C0 0%, #3E3671 100%);
+    text-align: center;
+}
+
+.map-page-title-area {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    place-items: center;
+    height: 180px;
+    flex-shrink: 0;
+    width: min(100%, 1000px);
+    margin: 0 auto;
+}
+
+.map-page-silhouette {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--highlight-yellow);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.map-page-heading h1 {
+    color: #fff;
+    font-family: var(--averia-font);
+    font-size: 3.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0 12px;
+}
+
+.map-page-heading-small {
+    display: block;
+    font-family: var(--quattrocento-font);
+    font-size: 0.3em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+}
+
+.map-page-introduction {
+    max-width: 600px;
+    margin: 28px auto 0;
+    font-family: var(--quattrocento-font);
+    font-size: 1.25em;
+    line-height: 1.35;
+}
+
+.map-overview {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    width: min(100%, 980px);
+    margin: 0 auto;
+    align-items: start;
+    align-content: start;
+}
+
+.map-overview,
+.map-landscape {
+    text-align: center;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-height: calc(100svh - var(--map-snap-offset));
+    /* Keep heading spacing inside the dark section, below its snap boundary. */
+    padding-top: 1.28em;
+    padding-bottom: 48px;
+}
+
+.map-landscape {
+    width: 100%;
+    margin: 0 auto;
+    /* The banner itself must begin at this section's snap boundary. */
+    padding-top: 0;
+}
+
+.map-landscape h2 {
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    min-height: 220px;
+    width: calc(100% + var(--map-inline-padding) + var(--map-inline-padding));
+    margin: 0 calc(0px - var(--map-inline-padding));
+    padding: 40px var(--map-inline-padding);
+    background:
+        linear-gradient(rgba(33, 34, 87, 0.68), rgba(57, 47, 103, 0.72)),
+        url('../timeline/Photos/2012-addressing-encampent.jpg') center 55% / cover no-repeat;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(5, 0, 59, 0.6);
+    font-size: clamp(2rem, 3vw, 3.05rem);
+    line-height: 1.25;
+}
+
+.map-topic-group {
+    width: min(100%, 980px);
+    margin: 36px auto 0;
+}
+
+.map-topic-group h3 {
+    margin: 0 0 0.25em;
+    font-family: var(--averia-font);
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+}
+
+.map-topic-group p {
+    max-width: 850px;
+    margin: 0 auto;
+    font-family: var(--quattrocento-font);
+    font-size: 14pt;
+    line-height: 1.28;
+}
+
+.map-topic-placeholders {
+    display: grid;
+    gap: 12px;
+    margin: 28px auto 0;
+}
+
+.map-topic-placeholders-three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 760px;
+}
+
+.map-topic-placeholders-four {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.map-topic-placeholders button,
+.map-topic-placeholders a {
+    box-sizing: content-box;
+    display: grid;
+    place-items: center;
+    min-width: 0;
+    min-height: 36px;
+    padding: 8px;
+    border: 0;
+    border-radius: 0;
+    background: var(--light-purple);
+    color: var(--light-beige);
+    font-family: var(--averia-font);
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.05;
+    text-align: center;
+    opacity: 1;
+    cursor: default;
+    overflow-wrap: break-word;
+}
+
+.map-topic-placeholders a { cursor: pointer; text-decoration: none; }
+.map-topic-placeholders a:hover { background: #9470c0; }
+.map-topic-placeholders a:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    .map-topic-placeholders-four {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .map-topic-placeholders {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+}
+
+.map-overview > * {
+    min-width: 0;
+}
+
+.map-page .map-overview-embed {
+    display: block;
+    position: static;
+    width: 100%;
+    height: clamp(240px, calc(100svh - 260px), 440px) !important;
+    margin: 0;
+    border: 0;
+    background: var(--medium-beige);
+    transition: box-shadow 180ms ease;
+}
+
+.map-page .map-overview-embed:hover,
+.map-page .map-overview-embed:focus-visible {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.75),
+                0 0 18px rgba(255, 255, 255, 0.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .map-page .map-overview-embed {
+        transition: none;
+    }
+}
+
+.map-open-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: inherit;
+    font-size: 10pt;
+    text-underline-offset: 2px;
+}
+
+.map-overview-heading {
+    margin-top: -1.28em;
+}
+
+.map-overview-title-band {
+    position: relative;
+    isolation: isolate;
+    overflow: visible;
+    min-height: 0;
+    box-sizing: border-box;
+    padding: calc(3em + 6px) 12px 0;
+    display: grid;
+    place-items: start center;
+}
+
+.map-overview-silhouette {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    width: 100%;
+    height: 260px;
+    color: #3e3b68;
+    pointer-events: none;
+}
+
+.map-overview-heading h1 {
+    margin: 0;
+    color: #fff;
+    font-family: var(--averia-font);
+    font-size: 3.5em;
+    line-height: 1.2;
+}
+
+.map-overview-subtitle {
+    display: block;
+    font-family: var(--quattrocento-font);
+    font-size: 0.3em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 1;
+}
+
+.map-overview-heading p {
+    max-width: 600px;
+    margin: 4em auto 1em;
+    font-family: var(--quattrocento-font);
+    font-size: 1.25em;
+    line-height: normal;
+}
+
+@media (min-width: 1024px) {
+    .map-overview-title-band { padding-top: 66px; }
+    .map-overview-heading p { margin-top: 3.5em; }
+}
+
+.map-overview-copy p {
+    margin: 0;
+    font-size: 14pt;
+    line-height: 1.28;
+}
+
+@media (max-width: 1023px) {
+    .map-page .map-overview-embed {
+        height: 360px !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    html.map-scroll-snap {
+        --map-snap-offset: 0px;
+    }
+    .main-content.map-page {
+        --map-inline-padding: clamp(48px, 8vw, 128px);
+        width: calc(100% - 60px);
+        min-height: 100vh;
+        margin: 0 0 0 60px;
+    }
+
+    .map-page-heading {
+        min-height: 404px;
+    }
+
+    .map-page-title-area {
+        height: 210px;
+    }
+}
+
+@media (max-width: 640px) {
+    .map-page-heading {
+        min-height: 296px;
+    }
+
+    .map-page-title-area {
+        height: 156px;
+    }
+
+    .main-content.map-page {
+        --map-inline-padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-page-heading-small {
+        max-width: 230px;
+        margin: 0 auto;
+    }
+}

@@ -549,9 +549,14 @@ h1 {
 
 .home-guidelines-detail h5 {
   margin: 20px 0 7px;
-  font-family: var(--averia-font);
-  font-size: 0.98rem;
-  line-height: 1.1;
+}
+
+.home-guidelines-detail .home-guideline-subheading,
+.home-guidelines-columns h5 {
+  font-family: var(--quattrocento-font);
+  font-size: 14pt;
+  font-weight: 700;
+  line-height: 1.28;
 }
 
 .home-guidelines-detail p {
@@ -602,6 +607,21 @@ h1 {
 .home-component-card:focus-visible {
   transform: translateY(-4px);
   box-shadow: 0 8px 18px rgba(57, 47, 103, 0.16);
+}
+
+.home-component-card:focus-visible {
+  outline: 2px solid var(--highlight-yellow);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-component-card {
+    transition: none;
+  }
+  .home-component-card:hover,
+  .home-component-card:focus-visible {
+    transform: none;
+  }
 }
 
 .home-component-image {
