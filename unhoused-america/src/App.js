@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 // components
 import './App.css';
@@ -26,6 +26,12 @@ function AppRoutesWithTransitions() {
   const [displayedLocation, setDisplayedLocation] = useState(location);
   const [transitionStage, setTransitionStage] = useState('entering');
   const timerRef = useRef(null);
+
+  // Reset after the destination mounts, not while the outgoing page fades out.
+  // Hash-only changes retain intentional in-page navigation.
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, [displayedLocation.pathname, displayedLocation.search]);
 
   useEffect(() => {
     if (transitionStage !== 'entering') return;
@@ -94,6 +100,7 @@ function AppRoutesWithTransitions() {
 function App() {
   return (
     <div className="App">
+      <div className="page-top-anchor" aria-hidden="true" />
       <Router>
         <Nav />
         <AppRoutesWithTransitions />

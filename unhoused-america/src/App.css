@@ -75,6 +75,16 @@ h1 {
 
 
 /* main content */
+.page-top-anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+  scroll-snap-align: start;
+}
+
 .main-content {
   margin-left: 5vw;
   z-index: 3;
